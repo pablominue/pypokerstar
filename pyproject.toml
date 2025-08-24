@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "poker"
+version = "0.1.0"
+description = ""
+authors = ["Pablo Minue"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+pydantic = "^2.11.7"
+polars = "^1.32.3"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
