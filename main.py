@@ -1,4 +1,4 @@
-from src.game.poker import Game, Player
+from pypokerstar.src.game.poker import Game, Player
 
 
 player1 = Player(name="Pablo", pot = 100)
