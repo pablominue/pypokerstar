@@ -1,4 +1,4 @@
-from src.types import Card, Deck
+from pypokerstar.src.types import Card, Deck
 import typing as t
 import random
 import polars as pl
@@ -28,6 +28,12 @@ class Bet:
         self.amount = amount
         self.type  = bet_type
 
+    def __str__(self) -> str:
+        return f"{self.player} {self.type} {self.amount.__str__()}"
+    
+    def __repr__(self):
+        return self.__str__()
+
 class Round:
 
     def __init__(self, name: str, bets: t.Iterable[Bet] = None, players: list['Player'] = [], pot: float = 0.0) -> None:
@@ -38,6 +44,7 @@ class Round:
         self.bets: t.Iterable[Bet] = []
         self.pot: float = 0.0
         self.board: t.Iterable[Card] = []
+        self.winner: t.Optional[Player] = None
 
     def add_player(self, player: 'Player') -> None:
         self.players.append(player)
@@ -50,6 +57,18 @@ class Round:
         for card in cards:
             if card not in self.board:
                 self.board.append(card)
+
+    def set_winner(self, player: 'Player') -> None:
+        self.winner = player
+
+    def __str__(self) -> str:
+        return f"Round {self.name} with {len(self.bets)} bets and pot {self.pot.__str__()} . Board: {' '.join([str(card) for card in self.board])}"
+    
+    def __repr__(self):
+        return self.__str__()
+    
+    def __hash__(self):
+        return hash((self.name, tuple(self.bets), self.pot, tuple(self.board)))
 
 class Player:
     def __init__(self, name: str = "", pot: float = 0, seat: int = 1, cards: t.Iterable[Card]=None) -> None:
@@ -67,11 +86,17 @@ class Player:
             return NotImplemented
         return self.name == other.name
 
+    def __str__(self) -> str:
+        return self.name
+    
+    def __repr__(self):
+        return self.__str__()
 
 class Hand:
-    def __init__(self, players: t.Iterable[Player], rounds: t.Iterable[Round]) -> None:
+    def __init__(self, players: t.Iterable[Player], rounds: t.Iterable[Round], hero: t.Optional[Player] = None) -> None:
         self.players = players
         self.pot = 0
+        self.hero = hero
         self.board: t.Iterable[Card] = []
         self.winner: t.Optional[Player] = None
         self.rounds: t.Iterable[Round] = rounds
@@ -95,6 +120,8 @@ class Hand:
                 return round
         return None
     
+    def set_winner(self, player: 'Player') -> None:
+        self.winner = player
 
     def get_player(self, name: str) -> t.Optional[Player]:
         for player in self.players:
@@ -102,6 +129,39 @@ class Hand:
                 return player
         return None
 
+    def get_hero_bets(self) -> t.Iterable[Bet]:
+        if not self.hero:
+            return []
+        hero_bets = []
+        for round in self.rounds:
+            for bet in round.bets:
+                if bet.player == self.hero:
+                    hero_bets.append(bet)
+        return hero_bets
+    
+    def get_hero_rounds(self) -> t.Iterable[Round]:
+        if not self.hero:
+            return []
+        hero_rounds = []
+        for round in self.rounds:
+            for bet in round.bets:
+                if bet.player == self.hero:
+                    hero_rounds.append(round)
+                    break
+        return hero_rounds
+    
+    def get_hero_finished_rounds(self) -> t.Iterable[Round]:
+        if not self.hero:
+            return []
+        hero_rounds = []
+        for round in self.rounds:
+            for bet in round.bets:
+                if bet.player == self.hero and bet.type == "folds":
+                    break
+                else:
+                    continue
+            hero_rounds.append(round)
+        return hero_rounds
 
     def to_polars(self) -> dict[str, t.Any]:
         self.refresh()
@@ -121,4 +181,5 @@ class Hand:
         }
     
     def __str__(self) -> str:
-        return f"Hand with {len(self.players)} players and {len(self.rounds)} rounds. Total pot: {self.pot}. Final board: {' '.join([str(card) for card in self.board])}"
+        players = {", ".join([str(p) for p in self.players])}
+        return f"Hand played by {players} with {len(self.rounds)} rounds. Total pot: {self.pot.__str__()} won by {self.winner.__str__()} . Final board: {' '.join([str(card) for card in self.board])}"
