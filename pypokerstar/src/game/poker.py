@@ -264,29 +264,32 @@ class History:
             raise ValueError("Hero is not defined")
         data = []
         for hand in self.hands:
-            hero_bets = hand.get_hero_bets()
-            # Sum of actual invested amounts by hero within the hand.
-            # Include blinds, bets, calls, raises, and subtract any returned uncalled amounts.
-            total_bet = sum(
-                bet.amount
-                for bet in hero_bets
-                if bet.type
-                in [
-                    "bets",
-                    "calls",
-                    "raises",
-                    "small blind",
-                    "big blind",
-                    "uncalled",  # negative amounts reduce invested total
-                ]
-            )
-            # Amounts explicitly collected by hero from the pot within the hand.
+            # Compute hero's invested total by street without double counting raises
+            total_bet = 0.0
+            for rnd in hand.rounds:
+                per_round = 0.0
+                for bet in rnd.bets:
+                    if bet.player != self.hero:
+                        continue
+                    if bet.type in ("small blind", "big blind", "bets", "calls"):
+                        per_round += bet.amount
+                    elif bet.type == "raises":
+                        # Treat raises as committing to the final amount of the street
+                        per_round = max(per_round, bet.amount)
+                    elif bet.type == "uncalled":
+                        per_round += bet.amount  # negative when returned
+                total_bet += per_round
+
+            # Prefer explicit collected amounts (handles splits/side pots)
             won = sum(
                 bet.amount
                 for rnd in hand.rounds
                 for bet in rnd.bets
                 if bet.player == self.hero and bet.type == "collected"
             )
+            # Fallback: equal split among winners if no explicit collected entry
+            if won == 0.0 and hand.winner and self.hero in hand.winner:
+                won = (hand.pot - hand.rake) / max(len(hand.winner), 1)
             data.append(
                 {
                     "date": hand.date,

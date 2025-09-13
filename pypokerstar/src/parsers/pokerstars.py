@@ -77,8 +77,6 @@ class PokerStarsParser(Parser):
             start = match.end()
             end = sections[i + 1].start() if i + 1 < len(sections) else len(hand)
             section_name = match.group(1).strip().upper()
-            if section_name in SPANISH_MAP.keys():
-                return {}
             section_name = SPANISH_MAP.get(section_name, section_name.lower())
             results[section_name] = hand[start:end].strip()
 
@@ -144,24 +142,33 @@ class PokerStarsParser(Parser):
                     amount_str = match.group(3).strip() if match.group(3) else ""
                     amount = 0.0
                     if amount_str:
-                        amount_pattern = re.compile(r"€([\d\.]+)")
-                        amount_match = amount_pattern.search(amount_str)
-                        if amount_match:
-                            amount = float(amount_match.group(1))
+                        if action == "raises":
+                            to_match = re.search(r"to\s+[€,$]?([\d\.]+)", amount_str)
+                            if to_match:
+                                amount = float(to_match.group(1))
+                            else:
+                                euros = re.findall(r"[€,$]([\d\.]+)", amount_str)
+                                if euros:
+                                    amount = float(euros[-1])
+                        else:
+                            amount_pattern = re.compile(r"[€,$]([\d\.]+)")
+                            amount_match = amount_pattern.search(amount_str)
+                            if amount_match:
+                                amount = float(amount_match.group(1))
                     for player in players:
                         if player.name == player_name:
                             bet = Bet(player=player, bet_type=action, amount=amount)
                             round.add_bet(bet)
             elif (
                 re.match(
-                    pattern=r"(.+?)(?:\(.*\) )?\: posts \S+ blind (?:[€,$])?(.*)?$",
+                    pattern=r"(.+?)(?:\(.*\) )?\: posts \S+ blind (?:[€,$])?(\d+(?:\.\d+)?)$",
                     string=row,
                     flags=re.DOTALL | re.IGNORECASE,
                 )
                 is not None
             ):
                 pattern = re.compile(
-                    r"(.+?)(?:\(.*\) )?\: posts \S+ blind (?:[€,$])?(.*)?$",
+                    r"(.+?)(?:\(.*\) )?\: posts (.*) blind (?:[€,$])?(\d+(?:\.\d+)?)$",
                     flags=re.DOTALL | re.IGNORECASE,
                 )
                 match = pattern.search(row)
@@ -277,7 +284,7 @@ class PokerStarsParser(Parser):
                 is not None
             ):
                 pattern = re.compile(
-                    r"Seat (\d)\: (.+?) \((?:[€,$])?(\d+\.\d+|\d+).+\)"
+                    r"Seat (\d+)\: (.+?) \((?:[€,$])?(\d+\.\d+|\d+).+\)"
                 )
                 match = pattern.search(row)
                 if match:

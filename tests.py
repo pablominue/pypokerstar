@@ -18,3 +18,9 @@ with pl.Config() as cfg:
     cfg.set_tbl_cols(10)
     print(df)
     print(df.get_column("rake").max())
+
+df = df.to_pandas()
+
+import matplotlib.pyplot as plt
+df.set_index("date")[["net"]].cumsum().plot()
+plt.savefig("out.png")
