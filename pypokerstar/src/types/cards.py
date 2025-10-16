@@ -1,7 +1,8 @@
-from pydantic import BaseModel
-import typing as t
-import random
 import itertools
+import random
+import typing as t
+
+from pydantic import BaseModel
 
 SPADES = "♠️"
 CLUBS = "♣️"

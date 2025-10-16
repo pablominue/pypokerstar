@@ -1,6 +1,7 @@
+import typing as t
+
 from pypokerstar.src.game.poker import Hand, Player
 from pypokerstar.src.types import Card, Pair
-import typing as t
 
 
 class PlayerStats:

@@ -1,6 +1,7 @@
 import typing as t
-from pypokerstar.src.game.poker import Hand, Bet, Player
-from abc import abstractmethod, ABC
+from abc import ABC, abstractmethod
+
+from pypokerstar.src.game.poker import Bet, Hand, Player
 
 
 class Metric(ABC):

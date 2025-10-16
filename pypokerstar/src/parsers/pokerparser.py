@@ -1,7 +1,8 @@
-from pypokerstar.src.types import Card
-from pypokerstar.src.game.poker import Player, Round, Bet, Hand
-import typing as t
 import os
+import typing as t
+
+from pypokerstar.src.game.poker import Bet, Hand, Player, Round
+from pypokerstar.src.types import Card
 
 
 class PokerParser:
