@@ -2,6 +2,9 @@ from pypokerstar.src.types import Card, Deck
 import typing as t
 import random
 import polars as pl
+import uuid
+import os
+
 
 SEATS = {
     1: "button",
@@ -180,6 +183,53 @@ class Hand:
             ]
         }
     
+
     def __str__(self) -> str:
         players = {", ".join([str(p) for p in self.players])}
         return f"Hand played by {players} with {len(self.rounds)} rounds. Total pot: {self.pot.__str__()} won by {self.winner.__str__()} . Final board: {' '.join([str(card) for card in self.board])}"
+    
+
+def export_hands(hands: t.Iterable[Hand], directory: str) -> None:
+    data = pl.DataFrame()
+    if not os.path.exists(directory):
+        os.makedirs(directory)
+    for i, hand in enumerate(hands):
+        for round in hand.rounds:
+            round_dict = {
+            "players": [player.__dict__ for player in round.players],
+            "pot": round.pot,
+            "table": [str(card) for card in hand.table],
+            "winner": round.winner.__dict__ if round.winner else None,
+            "round": round.name,
+            "bets": [bet.__dict__ for bet in round.bets],
+            "pot": round.pot,
+            "ending_pot": round.pot + sum(bet.amount for bet in round.bets)
+            }
+            data = pl.concat([data, pl.DataFrame(round_dict, strict=False)], how="vertical")
+            print(data)
+    print(data)
+    data.write_json(os.path.join(directory, "hands.json"))
+
+def read_hands(directory: str) -> t.List[Hand]:
+    hands = []
+    for filename in os.listdir(directory):
+        if filename.endswith(".json"):
+            data = pl.read_json(os.path.join(directory, filename))
+            for row in data.iter_rows(named=True):
+                players = [Player(**player) for player in row["players"]]
+                rounds = []
+                for round_data in row["rounds"]:
+                    round_players = players
+                    round_bets = []
+                    for bet_data in round_data["bets"]:
+                        bet_player = next((p for p in players if p.name == bet_data["player"]["name"]), None)
+                        if bet_player:
+                            round_bets.append(Bet(player=bet_player, bet_type=bet_data["type"], amount=bet_data["amount"]))
+                    round = Round(name=round_data["name"], bets=round_bets, players=round_players, pot=round_data["pot"])
+                    rounds.append(round)
+                winner = next((p for p in players if p.name == row["winner"]["name"]), None) if row["winner"] else None
+                hand = Hand(players=players, rounds=rounds, hero=None)
+                hand.pot = row["pot"]
+                hand.winner = winner
+                hands.append(hand)
+    return hands
