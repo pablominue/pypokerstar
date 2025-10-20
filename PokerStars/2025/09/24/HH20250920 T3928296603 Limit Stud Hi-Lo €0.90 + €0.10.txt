@@ -1,0 +1,1636 @@
+﻿PokerStars Hand #257821942146: Tournament #3928296603, €0.90+€0.10 EUR 7 Card Stud Hi/Lo Limit - Level VI (300/600) - 2025/09/20 22:54:05 CET [2025/09/20 16:54:05 ET]
+Table '3928296603 3' 6-max
+Seat 1: Trompeticius (17159 in chips) 
+Seat 2: latcho6357 (7674 in chips) is sitting out
+Seat 3: pipinoelbreve9 (10000 in chips) 
+Seat 5: rug26 (9096 in chips) 
+Seat 6: kalamo1 (9343 in chips) 
+Trompeticius: posts the ante 60
+latcho6357: posts the ante 60
+pipinoelbreve9: posts the ante 60
+rug26: posts the ante 60
+kalamo1: posts the ante 60
+*** 3rd STREET ***
+Dealt to Trompeticius [6s]
+Dealt to latcho6357 [Ah]
+Dealt to pipinoelbreve9 [6h As 4c]
+Dealt to rug26 [5h]
+Dealt to kalamo1 [9s]
+pipinoelbreve9: brings in for 90
+rug26: calls 90
+kalamo1: folds 
+Trompeticius: folds 
+latcho6357: folds 
+*** 4th STREET ***
+Dealt to pipinoelbreve9 [6h As 4c] [Kh]
+Dealt to rug26 [5h] [Qc]
+pipinoelbreve9: checks 
+rug26: checks 
+*** 5th STREET ***
+Dealt to pipinoelbreve9 [6h As 4c Kh] [Jh]
+Dealt to rug26 [5h Qc] [Ks]
+rug26: checks 
+pipinoelbreve9: bets 600
+rug26: calls 600
+*** 6th STREET ***
+Dealt to pipinoelbreve9 [6h As 4c Kh Jh] [2h]
+Dealt to rug26 [5h Qc Ks] [9d]
+rug26: checks 
+pipinoelbreve9: bets 600
+rug26: folds 
+Uncalled bet (600) returned to pipinoelbreve9
+pipinoelbreve9 collected 1680 from pot
+pipinoelbreve9: doesn't show hand 
+*** SUMMARY ***
+Total pot 1680 | Rake 0 
+Seat 1: Trompeticius folded on the 3rd Street (didn't bet)
+Seat 2: latcho6357 folded on the 3rd Street (didn't bet)
+Seat 3: pipinoelbreve9 collected (1680)
+Seat 5: rug26 folded on the 6th Street
+Seat 6: kalamo1 folded on the 3rd Street (didn't bet)
+
+
+
+PokerStars Hand #257821953985: Tournament #3928296603, €0.90+€0.10 EUR 7 Card Stud Hi/Lo Limit - Level VI (300/600) - 2025/09/20 22:54:52 CET [2025/09/20 16:54:52 ET]
+Table '3928296603 3' 6-max
+Seat 1: Trompeticius (17099 in chips) 
+Seat 2: latcho6357 (7614 in chips) is sitting out
+Seat 3: pipinoelbreve9 (10930 in chips) 
+Seat 5: rug26 (8346 in chips) 
+Seat 6: kalamo1 (9283 in chips) 
+Trompeticius: posts the ante 60
+latcho6357: posts the ante 60
+pipinoelbreve9: posts the ante 60
+rug26: posts the ante 60
+kalamo1: posts the ante 60
+*** 3rd STREET ***
+Dealt to Trompeticius [9d]
+Dealt to latcho6357 [7s]
+Dealt to pipinoelbreve9 [Tc 2s Kh]
+Dealt to rug26 [9s]
+Dealt to kalamo1 [6d]
+kalamo1: brings in for 90
+Trompeticius: folds 
+latcho6357: folds 
+pipinoelbreve9: raises 210 to 300
+rug26: folds 
+kalamo1: folds 
+Uncalled bet (210) returned to pipinoelbreve9
+pipinoelbreve9 collected 480 from pot
+pipinoelbreve9: doesn't show hand 
+*** SUMMARY ***
+Total pot 480 | Rake 0 
+Seat 1: Trompeticius folded on the 3rd Street (didn't bet)
+Seat 2: latcho6357 folded on the 3rd Street (didn't bet)
+Seat 3: pipinoelbreve9 collected (480)
+Seat 5: rug26 folded on the 3rd Street (didn't bet)
+Seat 6: kalamo1 folded on the 3rd Street
+
+
+
+PokerStars Hand #257821956726: Tournament #3928296603, €0.90+€0.10 EUR 7 Card Stud Hi/Lo Limit - Level VI (300/600) - 2025/09/20 22:55:02 CET [2025/09/20 16:55:02 ET]
+Table '3928296603 3' 6-max
+Seat 1: Trompeticius (17039 in chips) 
+Seat 2: latcho6357 (7554 in chips) is sitting out
+Seat 3: pipinoelbreve9 (11260 in chips) 
+Seat 5: rug26 (8286 in chips) 
+Seat 6: kalamo1 (9133 in chips) 
+Trompeticius: posts the ante 60
+latcho6357: posts the ante 60
+pipinoelbreve9: posts the ante 60
+rug26: posts the ante 60
+kalamo1: posts the ante 60
+*** 3rd STREET ***
+Dealt to Trompeticius [5s]
+Dealt to latcho6357 [4h]
+Dealt to pipinoelbreve9 [6h 7c Kd]
+Dealt to rug26 [9h]
+Dealt to kalamo1 [3d]
+kalamo1: brings in for 90
+Trompeticius: calls 90
+latcho6357: folds 
+pipinoelbreve9: raises 210 to 300
+rug26: folds 
+kalamo1: folds 
+Trompeticius: calls 210
+*** 4th STREET ***
+Dealt to Trompeticius [5s] [3s]
+Dealt to pipinoelbreve9 [6h 7c Kd] [8h]
+pipinoelbreve9: checks 
+Trompeticius: checks 
+*** 5th STREET ***
+Dealt to Trompeticius [5s 3s] [8c]
+Dealt to pipinoelbreve9 [6h 7c Kd 8h] [Tc]
+pipinoelbreve9: bets 600
+Trompeticius: calls 600
+*** 6th STREET ***
+Dealt to Trompeticius [5s 3s 8c] [Qc]
+Dealt to pipinoelbreve9 [6h 7c Kd 8h Tc] [6d]
+pipinoelbreve9: checks 
+Trompeticius: checks 
+*** RIVER ***
+Dealt to pipinoelbreve9 [6h 7c Kd 8h Tc 6d] [5h]
+pipinoelbreve9: checks 
+Trompeticius: bets 600
+pipinoelbreve9: folds 
+Uncalled bet (600) returned to Trompeticius
+Trompeticius collected 2190 from pot
+Trompeticius: doesn't show hand 
+*** SUMMARY ***
+Total pot 2190 | Rake 0 
+Seat 1: Trompeticius collected (2190)
+Seat 2: latcho6357 folded on the 3rd Street (didn't bet)
+Seat 3: pipinoelbreve9 folded on the River
+Seat 5: rug26 folded on the 3rd Street (didn't bet)
+Seat 6: kalamo1 folded on the 3rd Street
+
+
+
+PokerStars Hand #257822013050: Tournament #3928296603, €0.90+€0.10 EUR 7 Card Stud Hi/Lo Limit - Level VI (300/600) - 2025/09/20 23:00:50 CET [2025/09/20 17:00:50 ET]
+Table '3928296603 3' 6-max
+Seat 2: latcho6357 (7494 in chips) is sitting out
+Seat 3: pipinoelbreve9 (10300 in chips) 
+Seat 4: Lindaiquiri (10000 in chips) 
+Seat 5: rug26 (8226 in chips) 
+Seat 6: kalamo1 (8983 in chips) 
+latcho6357: posts the ante 60
+pipinoelbreve9: posts the ante 60
+Lindaiquiri: posts the ante 60
+rug26: posts the ante 60
+kalamo1: posts the ante 60
+*** 3rd STREET ***
+Dealt to latcho6357 [Ts]
+Dealt to pipinoelbreve9 [6s 4h 3s]
+Dealt to Lindaiquiri [4c]
+Dealt to rug26 [2d]
+Dealt to kalamo1 [Ac]
+rug26: brings in for 90
+kalamo1: folds 
+latcho6357: folds 
+pipinoelbreve9: calls 90
+Lindaiquiri: calls 90
+*** 4th STREET ***
+Dealt to pipinoelbreve9 [6s 4h 3s] [5d]
+Dealt to Lindaiquiri [4c] [Ad]
+Dealt to rug26 [2d] [3c]
+Lindaiquiri: checks 
+rug26: checks 
+pipinoelbreve9: bets 300
+Lindaiquiri: calls 300
+rug26: calls 300
+*** 5th STREET ***
+Dealt to pipinoelbreve9 [6s 4h 3s 5d] [2h]
+Dealt to Lindaiquiri [4c Ad] [Qd]
+Dealt to rug26 [2d 3c] [Td]
+Lindaiquiri: checks 
+rug26: checks 
+pipinoelbreve9: bets 600
+Lindaiquiri: calls 600
+rug26: folds 
+*** 6th STREET ***
+Dealt to pipinoelbreve9 [6s 4h 3s 5d 2h] [Qh]
+Dealt to Lindaiquiri [4c Ad Qd] [7d]
+Lindaiquiri: checks 
+pipinoelbreve9: bets 600
+Lindaiquiri: calls 600
+*** RIVER ***
+Dealt to pipinoelbreve9 [6s 4h 3s 5d 2h Qh] [2s]
+Lindaiquiri: checks 
+pipinoelbreve9: bets 600
+Lindaiquiri: calls 600
+*** SHOW DOWN ***
+pipinoelbreve9: shows [6s 4h 3s 5d 2h Qh 2s] (HI: a straight, Deuce to Six; LO: 6,5,4,3,2)
+Lindaiquiri: mucks hand 
+pipinoelbreve9 collected 2535 from pot
+pipinoelbreve9 collected 2535 from pot
+*** SUMMARY ***
+Total pot 5070 | Rake 0 
+Seat 2: latcho6357 folded on the 3rd Street (didn't bet)
+Seat 3: pipinoelbreve9 showed [6s 4h 3s 5d 2h Qh 2s] and won (5070) with HI: a straight, Deuce to Six; LO: 6,5,4,3,2
+Seat 4: Lindaiquiri mucked [4s 2c 4c Ad Qd 7d As]
+Seat 5: rug26 folded on the 5th Street
+Seat 6: kalamo1 folded on the 3rd Street (didn't bet)
+
+
+
+PokerStars Hand #257822036024: Tournament #3928296603, €0.90+€0.10 EUR 7 Card Stud Hi/Lo Limit - Level VI (300/600) - 2025/09/20 23:02:30 CET [2025/09/20 17:02:30 ET]
+Table '3928296603 3' 6-max
+Seat 2: latcho6357 (7434 in chips) is sitting out
+Seat 3: pipinoelbreve9 (13120 in chips) 
+Seat 4: Lindaiquiri (7750 in chips) 
+Seat 5: rug26 (7776 in chips) 
+Seat 6: kalamo1 (8923 in chips) 
+latcho6357: posts the ante 60
+pipinoelbreve9: posts the ante 60
+Lindaiquiri: posts the ante 60
+rug26: posts the ante 60
+kalamo1: posts the ante 60
+*** 3rd STREET ***
+Dealt to latcho6357 [6d]
+Dealt to pipinoelbreve9 [Ac 5c Ks]
+Dealt to Lindaiquiri [8d]
+Dealt to rug26 [4h]
+Dealt to kalamo1 [5d]
+rug26: brings in for 90
+kalamo1: folds 
+latcho6357: folds 
+pipinoelbreve9: raises 210 to 300
+Lindaiquiri: folds 
+rug26: calls 210
+*** 4th STREET ***
+Dealt to pipinoelbreve9 [Ac 5c Ks] [Kd]
+Dealt to rug26 [4h] [Kc]
+pipinoelbreve9: bets 300
+rug26: calls 300
+*** 5th STREET ***
+Dealt to pipinoelbreve9 [Ac 5c Ks Kd] [4s]
+Dealt to rug26 [4h Kc] [Th]
+pipinoelbreve9: bets 600
+rug26: folds 
+Uncalled bet (600) returned to pipinoelbreve9
+pipinoelbreve9 collected 1500 from pot
+pipinoelbreve9: doesn't show hand 
+*** SUMMARY ***
+Total pot 1500 | Rake 0 
+Seat 2: latcho6357 folded on the 3rd Street (didn't bet)
+Seat 3: pipinoelbreve9 collected (1500)
+Seat 4: Lindaiquiri folded on the 3rd Street (didn't bet)
+Seat 5: rug26 folded on the 5th Street
+Seat 6: kalamo1 folded on the 3rd Street (didn't bet)
+
+
+
+PokerStars Hand #257822050602: Tournament #3928296603, €0.90+€0.10 EUR 7 Card Stud Hi/Lo Limit - Level VI (300/600) - 2025/09/20 23:03:28 CET [2025/09/20 17:03:28 ET]
+Table '3928296603 3' 6-max
+Seat 2: latcho6357 (7374 in chips) is sitting out
+Seat 3: pipinoelbreve9 (13960 in chips) 
+Seat 4: Lindaiquiri (7690 in chips) 
+Seat 5: rug26 (7116 in chips) 
+Seat 6: kalamo1 (8863 in chips) 
+latcho6357: posts the ante 60
+pipinoelbreve9: posts the ante 60
+Lindaiquiri: posts the ante 60
+rug26: posts the ante 60
+kalamo1: posts the ante 60
+*** 3rd STREET ***
+Dealt to latcho6357 [7h]
+Dealt to pipinoelbreve9 [3d 5c Qh]
+Dealt to Lindaiquiri [9s]
+Dealt to rug26 [Qs]
+Dealt to kalamo1 [Ah]
+latcho6357: brings in for 90
+pipinoelbreve9: raises 210 to 300
+Lindaiquiri: calls 300
+rug26: folds 
+kalamo1: folds 
+latcho6357: folds 
+*** 4th STREET ***
+Dealt to pipinoelbreve9 [3d 5c Qh] [7s]
+Dealt to Lindaiquiri [9s] [Qd]
+Lindaiquiri: checks 
+pipinoelbreve9: bets 300
+Lindaiquiri: calls 300
+*** 5th STREET ***
+Dealt to pipinoelbreve9 [3d 5c Qh 7s] [Kd]
+Dealt to Lindaiquiri [9s Qd] [7c]
+pipinoelbreve9: bets 600
+Lindaiquiri: calls 600
+*** 6th STREET ***
+Dealt to pipinoelbreve9 [3d 5c Qh 7s Kd] [8h]
+Dealt to Lindaiquiri [9s Qd 7c] [2d]
+pipinoelbreve9: bets 600
+Lindaiquiri: calls 600
+*** RIVER ***
+Dealt to pipinoelbreve9 [3d 5c Qh 7s Kd 8h] [4d]
+pipinoelbreve9: bets 600
+Lindaiquiri: calls 600
+*** SHOW DOWN ***
+pipinoelbreve9: shows [3d 5c Qh 7s Kd 8h 4d] (HI: high card King; LO: 8,7,5,4,3)
+Lindaiquiri: shows [6s 4h 9s Qd 7c 2d Kh] (HI: high card King - Queen+Nine kicker)
+Lindaiquiri collected 2595 from pot
+pipinoelbreve9 collected 2595 from pot
+*** SUMMARY ***
+Total pot 5190 | Rake 0 
+Seat 2: latcho6357 folded on the 3rd Street
+Seat 3: pipinoelbreve9 showed [3d 5c Qh 7s Kd 8h 4d] and won (2595) with HI: high card King; LO: 8,7,5,4,3
+Seat 4: Lindaiquiri showed [6s 4h 9s Qd 7c 2d Kh] and won (2595) with HI: high card King
+Seat 5: rug26 folded on the 3rd Street (didn't bet)
+Seat 6: kalamo1 folded on the 3rd Street (didn't bet)
+
+
+
+PokerStars Hand #257822066016: Tournament #3928296603, €0.90+€0.10 EUR 7 Card Stud Hi/Lo Limit - Level VI (300/600) - 2025/09/20 23:04:27 CET [2025/09/20 17:04:27 ET]
+Table '3928296603 3' 6-max
+Seat 2: latcho6357 (7224 in chips) is sitting out
+Seat 3: pipinoelbreve9 (14095 in chips) 
+Seat 4: Lindaiquiri (7825 in chips) 
+Seat 5: rug26 (7056 in chips) 
+Seat 6: kalamo1 (8803 in chips) 
+latcho6357: posts the ante 60
+pipinoelbreve9: posts the ante 60
+Lindaiquiri: posts the ante 60
+rug26: posts the ante 60
+kalamo1: posts the ante 60
+*** 3rd STREET ***
+Dealt to latcho6357 [Jd]
+Dealt to pipinoelbreve9 [Ts 2d 3c]
+Dealt to Lindaiquiri [2c]
+Dealt to rug26 [3h]
+Dealt to kalamo1 [Qd]
+Lindaiquiri: brings in for 90
+rug26: calls 90
+kalamo1: calls 90
+latcho6357: folds 
+pipinoelbreve9: folds 
+*** 4th STREET ***
+Dealt to Lindaiquiri [2c] [5c]
+Dealt to rug26 [3h] [9h]
+Dealt to kalamo1 [Qd] [Js]
+kalamo1: checks 
+Lindaiquiri: bets 300
+rug26: folds 
+kalamo1: folds 
+Uncalled bet (300) returned to Lindaiquiri
+Lindaiquiri collected 570 from pot
+Lindaiquiri: doesn't show hand 
+*** SUMMARY ***
+Total pot 570 | Rake 0 
+Seat 2: latcho6357 folded on the 3rd Street (didn't bet)
+Seat 3: pipinoelbreve9 folded on the 3rd Street (didn't bet)
+Seat 4: Lindaiquiri collected (570)
+Seat 5: rug26 folded on the 4th Street
+Seat 6: kalamo1 folded on the 4th Street
+
+
+
+PokerStars Hand #257822080392: Tournament #3928296603, €0.90+€0.10 EUR 7 Card Stud Hi/Lo Limit - Level VI (300/600) - 2025/09/20 23:05:23 CET [2025/09/20 17:05:23 ET]
+Table '3928296603 3' 6-max
+Seat 2: latcho6357 (7164 in chips) is sitting out
+Seat 3: pipinoelbreve9 (14035 in chips) 
+Seat 4: Lindaiquiri (8245 in chips) 
+Seat 5: rug26 (6906 in chips) 
+Seat 6: kalamo1 (8653 in chips) 
+latcho6357: posts the ante 60
+pipinoelbreve9: posts the ante 60
+Lindaiquiri: posts the ante 60
+rug26: posts the ante 60
+kalamo1: posts the ante 60
+*** 3rd STREET ***
+Dealt to latcho6357 [Jh]
+Dealt to pipinoelbreve9 [9c Kc 4d]
+Dealt to Lindaiquiri [8h]
+Dealt to rug26 [6c]
+Dealt to kalamo1 [6h]
+pipinoelbreve9: bets 300
+Lindaiquiri: raises 300 to 600
+rug26: folds 
+kalamo1: folds 
+latcho6357: folds 
+pipinoelbreve9: raises 300 to 900
+Lindaiquiri: calls 300
+*** 4th STREET ***
+Dealt to pipinoelbreve9 [9c Kc 4d] [5s]
+Dealt to Lindaiquiri [8h] [Ah]
+Lindaiquiri: checks 
+pipinoelbreve9: bets 300
+Lindaiquiri: raises 300 to 600
+pipinoelbreve9: raises 300 to 900
+Lindaiquiri: calls 300
+*** 5th STREET ***
+Dealt to pipinoelbreve9 [9c Kc 4d 5s] [2c]
+Dealt to Lindaiquiri [8h Ah] [2h]
+Lindaiquiri: checks 
+pipinoelbreve9: bets 600
+Lindaiquiri: calls 600
+*** 6th STREET ***
+Dealt to pipinoelbreve9 [9c Kc 4d 5s 2c] [Qc]
+Dealt to Lindaiquiri [8h Ah 2h] [Kd]
+Lindaiquiri: checks 
+pipinoelbreve9: bets 600
+Lindaiquiri: calls 600
+*** RIVER ***
+Dealt to pipinoelbreve9 [9c Kc 4d 5s 2c Qc] [3c]
+Lindaiquiri: checks 
+pipinoelbreve9: bets 600
+Lindaiquiri: calls 600
+*** SHOW DOWN ***
+pipinoelbreve9: shows [9c Kc 4d 5s 2c Qc 3c] (HI: a flush, King high)
+Lindaiquiri: mucks hand 
+pipinoelbreve9 collected 7500 from pot
+No low hand qualified
+*** SUMMARY ***
+Total pot 7500 | Rake 0 
+Seat 2: latcho6357 folded on the 3rd Street (didn't bet)
+Seat 3: pipinoelbreve9 showed [9c Kc 4d 5s 2c Qc 3c] and won (7500) with HI: a flush, King high
+Seat 4: Lindaiquiri mucked [4c 8s 8h Ah 2h Kd Qd]
+Seat 5: rug26 folded on the 3rd Street (didn't bet)
+Seat 6: kalamo1 folded on the 3rd Street (didn't bet)
+
+
+
+PokerStars Hand #257822107765: Tournament #3928296603, €0.90+€0.10 EUR 7 Card Stud Hi/Lo Limit - Level VII (400/800) - 2025/09/20 23:07:10 CET [2025/09/20 17:07:10 ET]
+Table '3928296603 3' 6-max
+Seat 2: latcho6357 (7104 in chips) is sitting out
+Seat 3: pipinoelbreve9 (17875 in chips) 
+Seat 4: Lindaiquiri (4585 in chips) 
+Seat 5: rug26 (6846 in chips) 
+Seat 6: kalamo1 (8593 in chips) 
+latcho6357: posts the ante 80
+pipinoelbreve9: posts the ante 80
+Lindaiquiri: posts the ante 80
+rug26: posts the ante 80
+kalamo1: posts the ante 80
+*** 3rd STREET ***
+Dealt to latcho6357 [Kh]
+Dealt to pipinoelbreve9 [5d 3h 6s]
+Dealt to Lindaiquiri [Ts]
+Dealt to rug26 [Qd]
+Dealt to kalamo1 [Kd]
+pipinoelbreve9: bets 400
+Lindaiquiri: folds 
+rug26: calls 400
+kalamo1: folds 
+latcho6357: folds 
+*** 4th STREET ***
+Dealt to pipinoelbreve9 [5d 3h 6s] [5s]
+Dealt to rug26 [Qd] [9s]
+rug26: checks 
+pipinoelbreve9: bets 400
+rug26: calls 400
+*** 5th STREET ***
+Dealt to pipinoelbreve9 [5d 3h 6s 5s] [Ac]
+Dealt to rug26 [Qd 9s] [Td]
+pipinoelbreve9: checks 
+rug26: checks 
+*** 6th STREET ***
+Dealt to pipinoelbreve9 [5d 3h 6s 5s Ac] [7c]
+Dealt to rug26 [Qd 9s Td] [Qs]
+rug26: bets 800
+pipinoelbreve9: folds 
+Uncalled bet (800) returned to rug26
+rug26 collected 2000 from pot
+rug26: doesn't show hand 
+*** SUMMARY ***
+Total pot 2000 | Rake 0 
+Seat 2: latcho6357 folded on the 3rd Street (didn't bet)
+Seat 3: pipinoelbreve9 folded on the 6th Street
+Seat 4: Lindaiquiri folded on the 3rd Street (didn't bet)
+Seat 5: rug26 collected (2000)
+Seat 6: kalamo1 folded on the 3rd Street (didn't bet)
+
+
+
+PokerStars Hand #257822119199: Tournament #3928296603, €0.90+€0.10 EUR 7 Card Stud Hi/Lo Limit - Level VII (400/800) - 2025/09/20 23:07:54 CET [2025/09/20 17:07:54 ET]
+Table '3928296603 3' 6-max
+Seat 2: latcho6357 (7024 in chips) is sitting out
+Seat 3: pipinoelbreve9 (16995 in chips) 
+Seat 4: Lindaiquiri (4505 in chips) 
+Seat 5: rug26 (7966 in chips) 
+Seat 6: kalamo1 (8513 in chips) 
+latcho6357: posts the ante 80
+pipinoelbreve9: posts the ante 80
+Lindaiquiri: posts the ante 80
+rug26: posts the ante 80
+kalamo1: posts the ante 80
+*** 3rd STREET ***
+Dealt to latcho6357 [4c]
+Dealt to pipinoelbreve9 [7h Th As]
+Dealt to Lindaiquiri [Qh]
+Dealt to rug26 [Kd]
+Dealt to kalamo1 [6d]
+latcho6357: brings in for 120
+pipinoelbreve9: raises 280 to 400
+Lindaiquiri: folds 
+rug26: folds 
+kalamo1: folds 
+latcho6357: folds 
+Uncalled bet (280) returned to pipinoelbreve9
+pipinoelbreve9 collected 640 from pot
+pipinoelbreve9: doesn't show hand 
+*** SUMMARY ***
+Total pot 640 | Rake 0 
+Seat 2: latcho6357 folded on the 3rd Street
+Seat 3: pipinoelbreve9 collected (640)
+Seat 4: Lindaiquiri folded on the 3rd Street (didn't bet)
+Seat 5: rug26 folded on the 3rd Street (didn't bet)
+Seat 6: kalamo1 folded on the 3rd Street (didn't bet)
+
+
+
+PokerStars Hand #257822125522: Tournament #3928296603, €0.90+€0.10 EUR 7 Card Stud Hi/Lo Limit - Level VII (400/800) - 2025/09/20 23:08:19 CET [2025/09/20 17:08:19 ET]
+Table '3928296603 3' 6-max
+Seat 2: latcho6357 (6824 in chips) is sitting out
+Seat 3: pipinoelbreve9 (17435 in chips) 
+Seat 4: Lindaiquiri (4425 in chips) 
+Seat 5: rug26 (7886 in chips) 
+Seat 6: kalamo1 (8433 in chips) 
+latcho6357: posts the ante 80
+pipinoelbreve9: posts the ante 80
+Lindaiquiri: posts the ante 80
+rug26: posts the ante 80
+kalamo1: posts the ante 80
+*** 3rd STREET ***
+Dealt to latcho6357 [Jc]
+Dealt to pipinoelbreve9 [Ks Jd Ts]
+Dealt to Lindaiquiri [Ad]
+Dealt to rug26 [7c]
+Dealt to kalamo1 [5h]
+kalamo1: brings in for 120
+latcho6357: folds 
+pipinoelbreve9: raises 280 to 400
+Lindaiquiri: calls 400
+rug26: folds 
+kalamo1: folds 
+*** 4th STREET ***
+Dealt to pipinoelbreve9 [Ks Jd Ts] [Kh]
+Dealt to Lindaiquiri [Ad] [6d]
+Lindaiquiri: checks 
+pipinoelbreve9: bets 400
+Lindaiquiri: calls 400
+*** 5th STREET ***
+Dealt to pipinoelbreve9 [Ks Jd Ts Kh] [Kd]
+Dealt to Lindaiquiri [Ad 6d] [2d]
+pipinoelbreve9: bets 800
+Lindaiquiri: folds 
+Uncalled bet (800) returned to pipinoelbreve9
+pipinoelbreve9 collected 2120 from pot
+pipinoelbreve9: doesn't show hand 
+*** SUMMARY ***
+Total pot 2120 | Rake 0 
+Seat 2: latcho6357 folded on the 3rd Street (didn't bet)
+Seat 3: pipinoelbreve9 collected (2120)
+Seat 4: Lindaiquiri folded on the 5th Street
+Seat 5: rug26 folded on the 3rd Street (didn't bet)
+Seat 6: kalamo1 folded on the 3rd Street
+
+
+
+PokerStars Hand #257822137961: Tournament #3928296603, €0.90+€0.10 EUR 7 Card Stud Hi/Lo Limit - Level VII (400/800) - 2025/09/20 23:09:08 CET [2025/09/20 17:09:08 ET]
+Table '3928296603 3' 6-max
+Seat 2: latcho6357 (6744 in chips) is sitting out
+Seat 3: pipinoelbreve9 (18675 in chips) 
+Seat 4: Lindaiquiri (3545 in chips) 
+Seat 5: rug26 (7806 in chips) 
+Seat 6: kalamo1 (8233 in chips) 
+latcho6357: posts the ante 80
+pipinoelbreve9: posts the ante 80
+Lindaiquiri: posts the ante 80
+rug26: posts the ante 80
+kalamo1: posts the ante 80
+*** 3rd STREET ***
+Dealt to latcho6357 [Td]
+Dealt to pipinoelbreve9 [2s Jc Qd]
+Dealt to Lindaiquiri [6s]
+Dealt to rug26 [2h]
+Dealt to kalamo1 [Jh]
+rug26: brings in for 120
+kalamo1: folds 
+latcho6357: folds 
+pipinoelbreve9: raises 280 to 400
+Lindaiquiri: folds 
+rug26: calls 280
+*** 4th STREET ***
+Dealt to pipinoelbreve9 [2s Jc Qd] [Ts]
+Dealt to rug26 [2h] [3d]
+pipinoelbreve9: bets 400
+rug26: raises 400 to 800
+pipinoelbreve9: raises 400 to 1200
+rug26: raises 400 to 1600
+Betting is capped
+pipinoelbreve9: calls 400
+*** 5th STREET ***
+Dealt to pipinoelbreve9 [2s Jc Qd Ts] [5s]
+Dealt to rug26 [2h 3d] [Jd]
+pipinoelbreve9: bets 800
+rug26: calls 800
+*** 6th STREET ***
+Dealt to pipinoelbreve9 [2s Jc Qd Ts 5s] [Tc]
+Dealt to rug26 [2h 3d Jd] [9s]
+pipinoelbreve9: bets 800
+rug26: calls 800
+*** RIVER ***
+Dealt to pipinoelbreve9 [2s Jc Qd Ts 5s Tc] [3s]
+pipinoelbreve9: bets 800
+rug26: folds 
+Uncalled bet (800) returned to pipinoelbreve9
+pipinoelbreve9 collected 7600 from pot
+pipinoelbreve9: doesn't show hand 
+*** SUMMARY ***
+Total pot 7600 | Rake 0 
+Seat 2: latcho6357 folded on the 3rd Street (didn't bet)
+Seat 3: pipinoelbreve9 collected (7600)
+Seat 4: Lindaiquiri folded on the 3rd Street (didn't bet)
+Seat 5: rug26 folded on the River
+Seat 6: kalamo1 folded on the 3rd Street (didn't bet)
+
+
+
+PokerStars Hand #257822149818: Tournament #3928296603, €0.90+€0.10 EUR 7 Card Stud Hi/Lo Limit - Level VII (400/800) - 2025/09/20 23:09:54 CET [2025/09/20 17:09:54 ET]
+Table '3928296603 3' 6-max
+Seat 2: latcho6357 (6664 in chips) is sitting out
+Seat 3: pipinoelbreve9 (22595 in chips) 
+Seat 4: Lindaiquiri (3465 in chips) 
+Seat 5: rug26 (4126 in chips) 
+Seat 6: kalamo1 (8153 in chips) 
+latcho6357: posts the ante 80
+pipinoelbreve9: posts the ante 80
+Lindaiquiri: posts the ante 80
+rug26: posts the ante 80
+kalamo1: posts the ante 80
+*** 3rd STREET ***
+Dealt to latcho6357 [6s]
+Dealt to pipinoelbreve9 [2c 4s Jh]
+Dealt to Lindaiquiri [6h]
+Dealt to rug26 [3d]
+Dealt to kalamo1 [5d]
+rug26: brings in for 120
+kalamo1: folds 
+latcho6357: folds 
+pipinoelbreve9: folds 
+Lindaiquiri: calls 120
+*** 4th STREET ***
+Dealt to Lindaiquiri [6h] [8h]
+Dealt to rug26 [3d] [4c]
+Lindaiquiri: checks 
+rug26: bets 400
+Lindaiquiri: raises 400 to 800
+rug26: calls 400
+*** 5th STREET ***
+Dealt to Lindaiquiri [6h 8h] [Ad]
+Dealt to rug26 [3d 4c] [8c]
+Lindaiquiri: bets 800
+rug26: raises 800 to 1600
+Lindaiquiri: calls 800
+*** 6th STREET ***
+Dealt to Lindaiquiri [6h 8h Ad] [Ts]
+Dealt to rug26 [3d 4c 8c] [5h]
+Lindaiquiri: checks 
+rug26: bets 800
+Lindaiquiri: raises 65 to 865 and is all-in
+rug26: calls 65
+*** RIVER ***
+*** SHOW DOWN ***
+Lindaiquiri: shows [Ah 9d 6h 8h Ad Ts Kc] (HI: a pair of Aces)
+rug26: shows [3s 8s 3d 4c 8c 5h 7d] (HI: two pair, Eights and Threes; LO: 8,7,5,4,3)
+rug26 collected 3585 from pot
+rug26 collected 3585 from pot
+Lindaiquiri finished the tournament in 26th place
+*** SUMMARY ***
+Total pot 7170 | Rake 0 
+Seat 2: latcho6357 folded on the 3rd Street (didn't bet)
+Seat 3: pipinoelbreve9 folded on the 3rd Street (didn't bet)
+Seat 4: Lindaiquiri showed [Ah 9d 6h 8h Ad Ts Kc] and lost with HI: a pair of Aces
+Seat 5: rug26 showed [3s 8s 3d 4c 8c 5h 7d] and won (7170) with HI: two pair, Eights and Threes; LO: 8,7,5,4,3
+Seat 6: kalamo1 folded on the 3rd Street (didn't bet)
+
+
+
+PokerStars Hand #257822166046: Tournament #3928296603, €0.90+€0.10 EUR 7 Card Stud Hi/Lo Limit - Level VII (400/800) - 2025/09/20 23:10:57 CET [2025/09/20 17:10:57 ET]
+Table '3928296603 3' 6-max
+Seat 2: latcho6357 (6584 in chips) is sitting out
+Seat 3: pipinoelbreve9 (22515 in chips) 
+Seat 5: rug26 (7831 in chips) 
+Seat 6: kalamo1 (8073 in chips) 
+latcho6357: posts the ante 80
+pipinoelbreve9: posts the ante 80
+rug26: posts the ante 80
+kalamo1: posts the ante 80
+*** 3rd STREET ***
+Dealt to latcho6357 [3h]
+Dealt to pipinoelbreve9 [Ts 6s 7s]
+Dealt to rug26 [6h]
+Dealt to kalamo1 [2d]
+kalamo1: brings in for 120
+latcho6357: folds 
+pipinoelbreve9: raises 280 to 400
+rug26: raises 400 to 800
+kalamo1: folds 
+pipinoelbreve9: raises 400 to 1200
+rug26: raises 400 to 1600
+Betting is capped
+pipinoelbreve9: calls 400
+*** 4th STREET ***
+Dealt to pipinoelbreve9 [Ts 6s 7s] [9s]
+Dealt to rug26 [6h] [Ac]
+rug26: bets 400
+pipinoelbreve9: raises 400 to 800
+rug26: raises 400 to 1200
+pipinoelbreve9: raises 400 to 1600
+Betting is capped
+rug26: calls 400
+*** 5th STREET ***
+Dealt to pipinoelbreve9 [Ts 6s 7s 9s] [Js]
+Dealt to rug26 [6h Ac] [Ks]
+rug26: bets 800
+pipinoelbreve9: raises 800 to 1600
+rug26: raises 800 to 2400
+pipinoelbreve9: raises 800 to 3200
+Betting is capped
+rug26: calls 800
+*** 6th STREET ***
+Dealt to pipinoelbreve9 [Ts 6s 7s 9s Js] [Tc]
+Dealt to rug26 [6h Ac Ks] [4s]
+rug26: bets 800
+pipinoelbreve9: raises 800 to 1600
+rug26: calls 551 and is all-in
+Uncalled bet (249) returned to pipinoelbreve9
+*** RIVER ***
+Dealt to pipinoelbreve9 [Ts 6s 7s 9s Js Tc] [Jc]
+*** SHOW DOWN ***
+pipinoelbreve9: shows [Ts 6s 7s 9s Js Tc Jc] (HI: a flush, Jack high)
+rug26: shows [3s 5d 6h Ac Ks 4s Kd] (HI: a pair of Kings; LO: 6,5,4,3,A)
+pipinoelbreve9 collected 7971 from pot
+rug26 collected 7971 from pot
+*** SUMMARY ***
+Total pot 15942 | Rake 0 
+Seat 2: latcho6357 folded on the 3rd Street (didn't bet)
+Seat 3: pipinoelbreve9 showed [Ts 6s 7s 9s Js Tc Jc] and won (7971) with HI: a flush, Jack high
+Seat 5: rug26 showed [3s 5d 6h Ac Ks 4s Kd] and won (7971) with HI: a pair of Kings; LO: 6,5,4,3,A
+Seat 6: kalamo1 folded on the 3rd Street
+
+
+
+PokerStars Hand #257822176568: Tournament #3928296603, €0.90+€0.10 EUR 7 Card Stud Hi/Lo Limit - Level VII (400/800) - 2025/09/20 23:11:39 CET [2025/09/20 17:11:39 ET]
+Table '3928296603 3' 6-max
+Seat 1: txetxufar (8882 in chips) 
+Seat 2: latcho6357 (6504 in chips) is sitting out
+Seat 3: pipinoelbreve9 (22655 in chips) 
+Seat 5: rug26 (7971 in chips) 
+Seat 6: kalamo1 (7873 in chips) 
+txetxufar: posts the ante 80
+latcho6357: posts the ante 80
+pipinoelbreve9: posts the ante 80
+rug26: posts the ante 80
+kalamo1: posts the ante 80
+*** 3rd STREET ***
+Dealt to txetxufar [2s]
+Dealt to latcho6357 [Ks]
+Dealt to pipinoelbreve9 [Qc 5c Ac]
+Dealt to rug26 [7h]
+Dealt to kalamo1 [Kc]
+txetxufar: brings in for 120
+latcho6357: folds 
+pipinoelbreve9: raises 280 to 400
+rug26: folds 
+kalamo1: folds 
+txetxufar: folds 
+Uncalled bet (280) returned to pipinoelbreve9
+pipinoelbreve9 collected 640 from pot
+pipinoelbreve9: doesn't show hand 
+*** SUMMARY ***
+Total pot 640 | Rake 0 
+Seat 1: txetxufar folded on the 3rd Street
+Seat 2: latcho6357 folded on the 3rd Street (didn't bet)
+Seat 3: pipinoelbreve9 collected (640)
+Seat 5: rug26 folded on the 3rd Street (didn't bet)
+Seat 6: kalamo1 folded on the 3rd Street (didn't bet)
+
+
+
+PokerStars Hand #257822186866: Tournament #3928296603, €0.90+€0.10 EUR 7 Card Stud Hi/Lo Limit - Level VII (400/800) - 2025/09/20 23:12:20 CET [2025/09/20 17:12:20 ET]
+Table '3928296603 3' 6-max
+Seat 1: txetxufar (8682 in chips) 
+Seat 2: latcho6357 (6424 in chips) is sitting out
+Seat 3: pipinoelbreve9 (23095 in chips) 
+Seat 5: rug26 (7891 in chips) 
+Seat 6: kalamo1 (7793 in chips) 
+txetxufar: posts the ante 80
+latcho6357: posts the ante 80
+pipinoelbreve9: posts the ante 80
+rug26: posts the ante 80
+kalamo1: posts the ante 80
+*** 3rd STREET ***
+Dealt to txetxufar [As]
+Dealt to latcho6357 [7s]
+Dealt to pipinoelbreve9 [Qh Jc Td]
+Dealt to rug26 [Kh]
+Dealt to kalamo1 [2h]
+kalamo1: brings in for 120
+txetxufar: raises 280 to 400
+latcho6357: folds 
+pipinoelbreve9: raises 400 to 800
+rug26: folds 
+kalamo1: folds 
+txetxufar: calls 400
+*** 4th STREET ***
+Dealt to txetxufar [As] [6s]
+Dealt to pipinoelbreve9 [Qh Jc Td] [4h]
+txetxufar: bets 400
+pipinoelbreve9: folds 
+Uncalled bet (400) returned to txetxufar
+txetxufar collected 2120 from pot
+*** SUMMARY ***
+Total pot 2120 | Rake 0 
+Seat 1: txetxufar collected (2120)
+Seat 2: latcho6357 folded on the 3rd Street (didn't bet)
+Seat 3: pipinoelbreve9 folded on the 4th Street
+Seat 5: rug26 folded on the 3rd Street (didn't bet)
+Seat 6: kalamo1 folded on the 3rd Street
+
+
+
+PokerStars Hand #257822202649: Tournament #3928296603, €0.90+€0.10 EUR 7 Card Stud Hi/Lo Limit - Level VII (400/800) - 2025/09/20 23:13:23 CET [2025/09/20 17:13:23 ET]
+Table '3928296603 3' 6-max
+Seat 1: txetxufar (9922 in chips) 
+Seat 2: latcho6357 (6344 in chips) is sitting out
+Seat 3: pipinoelbreve9 (22215 in chips) 
+Seat 4: chapis44 (9362 in chips) 
+Seat 5: rug26 (7811 in chips) 
+Seat 6: kalamo1 (7593 in chips) 
+txetxufar: posts the ante 80
+latcho6357: posts the ante 80
+pipinoelbreve9: posts the ante 80
+chapis44: posts the ante 80
+rug26: posts the ante 80
+kalamo1: posts the ante 80
+*** 3rd STREET ***
+Dealt to txetxufar [6d]
+Dealt to latcho6357 [2d]
+Dealt to pipinoelbreve9 [Kc Td Qc]
+Dealt to chapis44 [5c]
+Dealt to rug26 [7h]
+Dealt to kalamo1 [9s]
+latcho6357: brings in for 120
+pipinoelbreve9: raises 280 to 400
+chapis44: folds 
+rug26: calls 400
+kalamo1: folds 
+txetxufar: calls 400
+latcho6357: folds 
+*** 4th STREET ***
+Dealt to txetxufar [6d] [8c]
+Dealt to pipinoelbreve9 [Kc Td Qc] [Jh]
+Dealt to rug26 [7h] [4c]
+pipinoelbreve9: bets 400
+rug26: calls 400
+txetxufar: calls 400
+*** 5th STREET ***
+Dealt to txetxufar [6d 8c] [Ah]
+Dealt to pipinoelbreve9 [Kc Td Qc Jh] [3s]
+Dealt to rug26 [7h 4c] [Qd]
+txetxufar: bets 800
+pipinoelbreve9: raises 800 to 1600
+rug26: folds 
+txetxufar: calls 800
+*** 6th STREET ***
+Dealt to txetxufar [6d 8c Ah] [Jc]
+Dealt to pipinoelbreve9 [Kc Td Qc Jh 3s] [Qs]
+pipinoelbreve9: bets 800
+txetxufar: calls 800
+*** RIVER ***
+Dealt to pipinoelbreve9 [Kc Td Qc Jh 3s Qs] [Tc]
+pipinoelbreve9: bets 800
+txetxufar: calls 800
+*** SHOW DOWN ***
+pipinoelbreve9: shows [Kc Td Qc Jh 3s Qs Tc] (HI: two pair, Queens and Tens)
+txetxufar: shows [Th Ad 6d 8c Ah Jc 8d] (HI: two pair, Aces and Eights)
+txetxufar collected 9400 from pot
+No low hand qualified
+*** SUMMARY ***
+Total pot 9400 | Rake 0 
+Seat 1: txetxufar showed [Th Ad 6d 8c Ah Jc 8d] and won (9400) with HI: two pair, Aces and Eights
+Seat 2: latcho6357 folded on the 3rd Street
+Seat 3: pipinoelbreve9 showed [Kc Td Qc Jh 3s Qs Tc] and lost with HI: two pair, Queens and Tens
+Seat 4: chapis44 folded on the 3rd Street (didn't bet)
+Seat 5: rug26 folded on the 5th Street
+Seat 6: kalamo1 folded on the 3rd Street (didn't bet)
+
+
+
+PokerStars Hand #257822221829: Tournament #3928296603, €0.90+€0.10 EUR 7 Card Stud Hi/Lo Limit - Level VII (400/800) - 2025/09/20 23:14:39 CET [2025/09/20 17:14:39 ET]
+Table '3928296603 3' 6-max
+Seat 1: txetxufar (15242 in chips) 
+Seat 2: latcho6357 (6144 in chips) is sitting out
+Seat 3: pipinoelbreve9 (18135 in chips) 
+Seat 4: chapis44 (9282 in chips) 
+Seat 5: rug26 (6931 in chips) 
+Seat 6: kalamo1 (7513 in chips) 
+txetxufar: posts the ante 80
+latcho6357: posts the ante 80
+pipinoelbreve9: posts the ante 80
+chapis44: posts the ante 80
+rug26: posts the ante 80
+kalamo1: posts the ante 80
+*** 3rd STREET ***
+Dealt to txetxufar [9c]
+Dealt to latcho6357 [6c]
+Dealt to pipinoelbreve9 [Ac 8h 4h]
+Dealt to chapis44 [Js]
+Dealt to rug26 [9s]
+Dealt to kalamo1 [As]
+pipinoelbreve9: bets 400
+chapis44: folds 
+rug26: folds 
+kalamo1: calls 400
+txetxufar: folds 
+latcho6357: folds 
+*** 4th STREET ***
+Dealt to pipinoelbreve9 [Ac 8h 4h] [Th]
+Dealt to kalamo1 [As] [Tc]
+kalamo1: bets 400
+pipinoelbreve9: raises 400 to 800
+kalamo1: calls 400
+*** 5th STREET ***
+Dealt to pipinoelbreve9 [Ac 8h 4h Th] [5h]
+Dealt to kalamo1 [As Tc] [Jh]
+kalamo1: checks 
+pipinoelbreve9: bets 800
+kalamo1: calls 800
+*** 6th STREET ***
+Dealt to pipinoelbreve9 [Ac 8h 4h Th 5h] [8d]
+Dealt to kalamo1 [As Tc Jh] [5s]
+kalamo1: checks 
+pipinoelbreve9: bets 800
+kalamo1: calls 800
+*** RIVER ***
+Dealt to pipinoelbreve9 [Ac 8h 4h Th 5h 8d] [7s]
+kalamo1: checks 
+pipinoelbreve9: bets 800
+kalamo1: calls 800
+*** SHOW DOWN ***
+pipinoelbreve9: shows [Ac 8h 4h Th 5h 8d 7s] (HI: a pair of Eights; LO: 8,7,5,4,A)
+kalamo1: mucks hand 
+pipinoelbreve9 collected 3840 from pot
+pipinoelbreve9 collected 3840 from pot
+*** SUMMARY ***
+Total pot 7680 | Rake 0 
+Seat 1: txetxufar folded on the 3rd Street (didn't bet)
+Seat 2: latcho6357 folded on the 3rd Street (didn't bet)
+Seat 3: pipinoelbreve9 showed [Ac 8h 4h Th 5h 8d 7s] and won (7680) with HI: a pair of Eights; LO: 8,7,5,4,A
+Seat 4: chapis44 folded on the 3rd Street (didn't bet)
+Seat 5: rug26 folded on the 3rd Street (didn't bet)
+Seat 6: kalamo1 mucked [8c 5c As Tc Jh 5s 2h]
+
+
+
+PokerStars Hand #257822232272: Tournament #3928296603, €0.90+€0.10 EUR 7 Card Stud Hi/Lo Limit - Level VII (400/800) - 2025/09/20 23:15:20 CET [2025/09/20 17:15:20 ET]
+Table '3928296603 3' 6-max
+Seat 1: txetxufar (15162 in chips) 
+Seat 2: latcho6357 (6064 in chips) is sitting out
+Seat 3: pipinoelbreve9 (22135 in chips) 
+Seat 4: chapis44 (9202 in chips) 
+Seat 5: rug26 (6851 in chips) 
+Seat 6: kalamo1 (3833 in chips) 
+txetxufar: posts the ante 80
+latcho6357: posts the ante 80
+pipinoelbreve9: posts the ante 80
+chapis44: posts the ante 80
+rug26: posts the ante 80
+kalamo1: posts the ante 80
+*** 3rd STREET ***
+Dealt to txetxufar [9c]
+Dealt to latcho6357 [2h]
+Dealt to pipinoelbreve9 [Ks Kd Th]
+Dealt to chapis44 [9s]
+Dealt to rug26 [Kh]
+Dealt to kalamo1 [5s]
+latcho6357: brings in for 120
+pipinoelbreve9: raises 280 to 400
+chapis44: calls 400
+rug26: folds 
+kalamo1: folds 
+txetxufar: calls 400
+latcho6357: folds 
+*** 4th STREET ***
+Dealt to txetxufar [9c] [9d]
+Dealt to pipinoelbreve9 [Ks Kd Th] [8d]
+Dealt to chapis44 [9s] [Ah]
+txetxufar: checks 
+pipinoelbreve9: bets 400
+chapis44: calls 400
+txetxufar: calls 400
+*** 5th STREET ***
+Dealt to txetxufar [9c 9d] [2c]
+Dealt to pipinoelbreve9 [Ks Kd Th 8d] [Jh]
+Dealt to chapis44 [9s Ah] [4d]
+txetxufar: checks 
+pipinoelbreve9: bets 800
+chapis44: calls 800
+txetxufar: calls 800
+*** 6th STREET ***
+Dealt to txetxufar [9c 9d 2c] [3d]
+Dealt to pipinoelbreve9 [Ks Kd Th 8d Jh] [7s]
+Dealt to chapis44 [9s Ah 4d] [4h]
+txetxufar: checks 
+pipinoelbreve9: bets 800
+chapis44: calls 800
+txetxufar: calls 800
+*** RIVER ***
+Dealt to pipinoelbreve9 [Ks Kd Th 8d Jh 7s] [2s]
+txetxufar: checks 
+pipinoelbreve9: bets 800
+chapis44: folds 
+txetxufar: calls 800
+*** SHOW DOWN ***
+pipinoelbreve9: shows [Ks Kd Th 8d Jh 7s 2s] (HI: a pair of Kings)
+txetxufar: shows [5c 3c 9c 9d 2c 3d Ts] (HI: two pair, Nines and Threes)
+txetxufar collected 9400 from pot
+No low hand qualified
+*** SUMMARY ***
+Total pot 9400 | Rake 0 
+Seat 1: txetxufar showed [5c 3c 9c 9d 2c 3d Ts] and won (9400) with HI: two pair, Nines and Threes
+Seat 2: latcho6357 folded on the 3rd Street
+Seat 3: pipinoelbreve9 showed [Ks Kd Th 8d Jh 7s 2s] and lost with HI: a pair of Kings
+Seat 4: chapis44 folded on the River
+Seat 5: rug26 folded on the 3rd Street (didn't bet)
+Seat 6: kalamo1 folded on the 3rd Street (didn't bet)
+
+
+
+PokerStars Hand #257822256695: Tournament #3928296603, €0.90+€0.10 EUR 7 Card Stud Hi/Lo Limit - Level VIII (500/1000) - 2025/09/20 23:16:56 CET [2025/09/20 17:16:56 ET]
+Table '3928296603 3' 6-max
+Seat 1: txetxufar (21282 in chips) 
+Seat 2: latcho6357 (5864 in chips) is sitting out
+Seat 3: pipinoelbreve9 (18855 in chips) 
+Seat 4: chapis44 (6722 in chips) 
+Seat 5: rug26 (6771 in chips) 
+Seat 6: kalamo1 (3753 in chips) 
+txetxufar: posts the ante 100
+latcho6357: posts the ante 100
+pipinoelbreve9: posts the ante 100
+chapis44: posts the ante 100
+rug26: posts the ante 100
+kalamo1: posts the ante 100
+*** 3rd STREET ***
+Dealt to txetxufar [5s]
+Dealt to latcho6357 [4c]
+Dealt to pipinoelbreve9 [8d Jh 7s]
+Dealt to chapis44 [Qd]
+Dealt to rug26 [8c]
+Dealt to kalamo1 [Kd]
+latcho6357: brings in for 150
+pipinoelbreve9: folds 
+chapis44: calls 150
+rug26: calls 150
+kalamo1: folds 
+txetxufar: calls 150
+*** 4th STREET ***
+Dealt to txetxufar [5s] [9c]
+Dealt to latcho6357 [4c] [Tc]
+Dealt to chapis44 [Qd] [4d]
+Dealt to rug26 [8c] [4h]
+chapis44: bets 500
+rug26: calls 500
+txetxufar: folds 
+latcho6357: folds 
+*** 5th STREET ***
+Dealt to chapis44 [Qd 4d] [2c]
+Dealt to rug26 [8c 4h] [2h]
+chapis44: bets 1000
+rug26: raises 1000 to 2000
+chapis44: raises 1000 to 3000
+rug26: raises 1000 to 4000
+Betting is capped
+chapis44: calls 1000
+*** 6th STREET ***
+Dealt to chapis44 [Qd 4d 2c] [9d]
+Dealt to rug26 [8c 4h 2h] [Kc]
+rug26: bets 1000
+chapis44: raises 972 to 1972 and is all-in
+rug26: calls 972
+*** RIVER ***
+*** SHOW DOWN ***
+chapis44: shows [Ad 7d Qd 4d 2c 9d Ah] (HI: a flush, Ace high)
+rug26: shows [6d Ac 8c 4h 2h Kc Qc] (HI: high card Ace; LO: 8,6,4,2,A)
+chapis44 collected 7072 from pot
+rug26 collected 7072 from pot
+*** SUMMARY ***
+Total pot 14144 | Rake 0 
+Seat 1: txetxufar folded on the 4th Street
+Seat 2: latcho6357 folded on the 4th Street
+Seat 3: pipinoelbreve9 folded on the 3rd Street (didn't bet)
+Seat 4: chapis44 showed [Ad 7d Qd 4d 2c 9d Ah] and won (7072) with HI: a flush, Ace high
+Seat 5: rug26 showed [6d Ac 8c 4h 2h Kc Qc] and won (7072) with HI: high card Ace; LO: 8,6,4,2,A
+Seat 6: kalamo1 folded on the 3rd Street (didn't bet)
+
+
+
+PokerStars Hand #257822269569: Tournament #3928296603, €0.90+€0.10 EUR 7 Card Stud Hi/Lo Limit - Level VIII (500/1000) - 2025/09/20 23:17:47 CET [2025/09/20 17:17:47 ET]
+Table '3928296603 3' 6-max
+Seat 1: txetxufar (21032 in chips) 
+Seat 2: latcho6357 (5614 in chips) is sitting out
+Seat 3: pipinoelbreve9 (18755 in chips) 
+Seat 4: chapis44 (7072 in chips) 
+Seat 5: rug26 (7121 in chips) 
+Seat 6: kalamo1 (3653 in chips) 
+txetxufar: posts the ante 100
+latcho6357: posts the ante 100
+pipinoelbreve9: posts the ante 100
+chapis44: posts the ante 100
+rug26: posts the ante 100
+kalamo1: posts the ante 100
+*** 3rd STREET ***
+Dealt to txetxufar [8h]
+Dealt to latcho6357 [As]
+Dealt to pipinoelbreve9 [4c Td Js]
+Dealt to chapis44 [4s]
+Dealt to rug26 [Kc]
+Dealt to kalamo1 [Kd]
+chapis44: brings in for 150
+rug26: folds 
+kalamo1: folds 
+txetxufar: calls 150
+latcho6357: folds 
+pipinoelbreve9: calls 150
+*** 4th STREET ***
+Dealt to txetxufar [8h] [Kh]
+Dealt to pipinoelbreve9 [4c Td Js] [7s]
+Dealt to chapis44 [4s] [5s]
+txetxufar: bets 500
+pipinoelbreve9: folds 
+chapis44: folds 
+Uncalled bet (500) returned to txetxufar
+txetxufar collected 1050 from pot
+*** SUMMARY ***
+Total pot 1050 | Rake 0 
+Seat 1: txetxufar collected (1050)
+Seat 2: latcho6357 folded on the 3rd Street (didn't bet)
+Seat 3: pipinoelbreve9 folded on the 4th Street
+Seat 4: chapis44 folded on the 4th Street
+Seat 5: rug26 folded on the 3rd Street (didn't bet)
+Seat 6: kalamo1 folded on the 3rd Street (didn't bet)
+
+
+
+PokerStars Hand #257822287419: Tournament #3928296603, €0.90+€0.10 EUR 7 Card Stud Hi/Lo Limit - Level VIII (500/1000) - 2025/09/20 23:18:58 CET [2025/09/20 17:18:58 ET]
+Table '3928296603 4' 6-max
+Seat 1: Delavaij (8386 in chips) is sitting out
+Seat 2: pipinoelbreve9 (18505 in chips) 
+Seat 4: ignacio-paul (15378 in chips) 
+Seat 5: mad69006 (25655 in chips) 
+Seat 6: AnthoMojito (22187 in chips) 
+Delavaij: posts the ante 100
+pipinoelbreve9: posts the ante 100
+ignacio-paul: posts the ante 100
+mad69006: posts the ante 100
+AnthoMojito: posts the ante 100
+*** 3rd STREET ***
+Dealt to Delavaij [3h]
+Dealt to pipinoelbreve9 [2s 7d Td]
+Dealt to ignacio-paul [Kh]
+Dealt to mad69006 [Qs]
+Dealt to AnthoMojito [8s]
+Delavaij: brings in for 150
+pipinoelbreve9: calls 150
+ignacio-paul: calls 150
+mad69006: folds 
+AnthoMojito: calls 150
+*** 4th STREET ***
+Dealt to Delavaij [3h] [Ts]
+Dealt to pipinoelbreve9 [2s 7d Td] [Js]
+Dealt to ignacio-paul [Kh] [9h]
+Dealt to AnthoMojito [8s] [5h]
+ignacio-paul: bets 500
+AnthoMojito: calls 500
+Delavaij: folds 
+pipinoelbreve9: calls 500
+*** 5th STREET ***
+Dealt to pipinoelbreve9 [2s 7d Td Js] [2h]
+Dealt to ignacio-paul [Kh 9h] [4c]
+Dealt to AnthoMojito [8s 5h] [4h]
+ignacio-paul: bets 1000
+AnthoMojito: calls 1000
+pipinoelbreve9: folds 
+*** 6th STREET ***
+Dealt to ignacio-paul [Kh 9h 4c] [8h]
+Dealt to AnthoMojito [8s 5h 4h] [4s]
+AnthoMojito: checks 
+ignacio-paul: checks 
+*** RIVER ***
+AnthoMojito: bets 1000
+ignacio-paul: calls 1000
+*** SHOW DOWN ***
+AnthoMojito: shows [Tc 7h 8s 5h 4h 4s 3s] (HI: a pair of Fours; LO: 8,7,5,4,3)
+ignacio-paul: shows [3c Kd Kh 9h 4c 8h 6d] (HI: a pair of Kings)
+ignacio-paul collected 3300 from pot
+AnthoMojito collected 3300 from pot
+*** SUMMARY ***
+Total pot 6600 | Rake 0 
+Seat 1: Delavaij folded on the 4th Street
+Seat 2: pipinoelbreve9 folded on the 5th Street
+Seat 4: ignacio-paul showed [3c Kd Kh 9h 4c 8h 6d] and won (3300) with HI: a pair of Kings
+Seat 5: mad69006 folded on the 3rd Street (didn't bet)
+Seat 6: AnthoMojito showed [Tc 7h 8s 5h 4h 4s 3s] and won (3300) with HI: a pair of Fours; LO: 8,7,5,4,3
+
+
+
+PokerStars Hand #257822303724: Tournament #3928296603, €0.90+€0.10 EUR 7 Card Stud Hi/Lo Limit - Level VIII (500/1000) - 2025/09/20 23:20:02 CET [2025/09/20 17:20:02 ET]
+Table '3928296603 4' 6-max
+Seat 1: Delavaij (8136 in chips) is sitting out
+Seat 2: pipinoelbreve9 (17755 in chips) 
+Seat 4: ignacio-paul (15928 in chips) 
+Seat 5: mad69006 (25555 in chips) 
+Seat 6: AnthoMojito (22737 in chips) 
+Delavaij: posts the ante 100
+pipinoelbreve9: posts the ante 100
+ignacio-paul: posts the ante 100
+mad69006: posts the ante 100
+AnthoMojito: posts the ante 100
+*** 3rd STREET ***
+Dealt to Delavaij [6d]
+Dealt to pipinoelbreve9 [Jd 9s Ks]
+Dealt to ignacio-paul [As]
+Dealt to mad69006 [Qc]
+Dealt to AnthoMojito [4c]
+AnthoMojito: brings in for 150
+Delavaij: folds 
+pipinoelbreve9: raises 350 to 500
+ignacio-paul: calls 500
+mad69006: folds 
+AnthoMojito: folds 
+*** 4th STREET ***
+Dealt to pipinoelbreve9 [Jd 9s Ks] [9c]
+Dealt to ignacio-paul [As] [4h]
+ignacio-paul: checks 
+pipinoelbreve9: bets 500
+ignacio-paul: calls 500
+*** 5th STREET ***
+Dealt to pipinoelbreve9 [Jd 9s Ks 9c] [Ah]
+Dealt to ignacio-paul [As 4h] [Th]
+pipinoelbreve9: bets 1000
+ignacio-paul: calls 1000
+*** 6th STREET ***
+Dealt to pipinoelbreve9 [Jd 9s Ks 9c Ah] [Qd]
+Dealt to ignacio-paul [As 4h Th] [8d]
+pipinoelbreve9: bets 1000
+ignacio-paul: calls 1000
+*** RIVER ***
+Dealt to pipinoelbreve9 [Jd 9s Ks 9c Ah Qd] [Ad]
+pipinoelbreve9: bets 1000
+ignacio-paul: calls 1000
+*** SHOW DOWN ***
+pipinoelbreve9: shows [Jd 9s Ks 9c Ah Qd Ad] (HI: two pair, Aces and Nines)
+ignacio-paul: shows [3h 6c As 4h Th 8d 3c] (HI: a pair of Threes; LO: 8,6,4,3,A)
+pipinoelbreve9 collected 4325 from pot
+ignacio-paul collected 4325 from pot
+*** SUMMARY ***
+Total pot 8650 | Rake 0 
+Seat 1: Delavaij folded on the 3rd Street (didn't bet)
+Seat 2: pipinoelbreve9 showed [Jd 9s Ks 9c Ah Qd Ad] and won (4325) with HI: two pair, Aces and Nines
+Seat 4: ignacio-paul showed [3h 6c As 4h Th 8d 3c] and won (4325) with HI: a pair of Threes; LO: 8,6,4,3,A
+Seat 5: mad69006 folded on the 3rd Street (didn't bet)
+Seat 6: AnthoMojito folded on the 3rd Street
+
+
+
+PokerStars Hand #257822314421: Tournament #3928296603, €0.90+€0.10 EUR 7 Card Stud Hi/Lo Limit - Level VIII (500/1000) - 2025/09/20 23:20:44 CET [2025/09/20 17:20:44 ET]
+Table '3928296603 4' 6-max
+Seat 1: Delavaij (8036 in chips) is sitting out
+Seat 2: pipinoelbreve9 (17980 in chips) 
+Seat 4: ignacio-paul (16153 in chips) 
+Seat 5: mad69006 (25455 in chips) 
+Seat 6: AnthoMojito (22487 in chips) 
+Delavaij: posts the ante 100
+pipinoelbreve9: posts the ante 100
+ignacio-paul: posts the ante 100
+mad69006: posts the ante 100
+AnthoMojito: posts the ante 100
+*** 3rd STREET ***
+Dealt to Delavaij [Ad]
+Dealt to pipinoelbreve9 [Ts Tc Th]
+Dealt to ignacio-paul [6h]
+Dealt to mad69006 [8d]
+Dealt to AnthoMojito [5h]
+AnthoMojito: brings in for 150
+Delavaij: folds 
+pipinoelbreve9: raises 350 to 500
+ignacio-paul: calls 500
+mad69006: calls 500
+AnthoMojito: folds 
+*** 4th STREET ***
+Dealt to pipinoelbreve9 [Ts Tc Th] [Js]
+Dealt to ignacio-paul [6h] [Kd]
+Dealt to mad69006 [8d] [2d]
+ignacio-paul: checks 
+mad69006: bets 500
+pipinoelbreve9: raises 500 to 1000
+ignacio-paul: calls 1000
+mad69006: calls 500
+*** 5th STREET ***
+Dealt to pipinoelbreve9 [Ts Tc Th Js] [Kh]
+Dealt to ignacio-paul [6h Kd] [8c]
+Dealt to mad69006 [8d 2d] [4h]
+pipinoelbreve9: bets 1000
+ignacio-paul: calls 1000
+mad69006: raises 1000 to 2000
+pipinoelbreve9: raises 1000 to 3000
+ignacio-paul: calls 2000
+mad69006: raises 1000 to 4000
+Betting is capped
+pipinoelbreve9: calls 1000
+ignacio-paul: calls 1000
+*** 6th STREET ***
+Dealt to pipinoelbreve9 [Ts Tc Th Js Kh] [3c]
+Dealt to ignacio-paul [6h Kd 8c] [7d]
+Dealt to mad69006 [8d 2d 4h] [5s]
+pipinoelbreve9: bets 1000
+ignacio-paul: calls 1000
+mad69006: raises 1000 to 2000
+pipinoelbreve9: raises 1000 to 3000
+ignacio-paul: calls 2000
+mad69006: raises 1000 to 4000
+Betting is capped
+pipinoelbreve9: calls 1000
+ignacio-paul: calls 1000
+*** RIVER ***
+Dealt to pipinoelbreve9 [Ts Tc Th Js Kh 3c] [8h]
+pipinoelbreve9: bets 1000
+ignacio-paul: calls 1000
+mad69006: raises 1000 to 2000
+pipinoelbreve9: raises 1000 to 3000
+ignacio-paul: calls 2000
+mad69006: raises 1000 to 4000
+Betting is capped
+pipinoelbreve9: calls 1000
+ignacio-paul: calls 1000
+*** SHOW DOWN ***
+mad69006: shows [6s 7c 8d 2d 4h 5s 7s] (HI: a straight, Four to Eight; LO: 7,6,5,4,2)
+pipinoelbreve9: mucks hand 
+ignacio-paul: shows [3d 4s 6h Kd 8c 7d 2h] (HI: high card King; LO: 7,6,4,3,2)
+mad69006 collected 20575 from pot
+ignacio-paul collected 20575 from pot
+*** SUMMARY ***
+Total pot 41150 | Rake 0 
+Seat 1: Delavaij folded on the 3rd Street (didn't bet)
+Seat 2: pipinoelbreve9 mucked [Ts Tc Th Js Kh 3c 8h]
+Seat 4: ignacio-paul showed [3d 4s 6h Kd 8c 7d 2h] and won (20575) with HI: high card King; LO: 7,6,4,3,2
+Seat 5: mad69006 showed [6s 7c 8d 2d 4h 5s 7s] and won (20575) with HI: a straight, Four to Eight; LO: 7,6,5,4,2
+Seat 6: AnthoMojito folded on the 3rd Street
+
+
+
+PokerStars Hand #257822330639: Tournament #3928296603, €0.90+€0.10 EUR 7 Card Stud Hi/Lo Limit - Level VIII (500/1000) - 2025/09/20 23:21:48 CET [2025/09/20 17:21:48 ET]
+Table '3928296603 4' 6-max
+Seat 1: Delavaij (7936 in chips) is sitting out
+Seat 2: pipinoelbreve9 (4380 in chips) 
+Seat 4: ignacio-paul (23128 in chips) 
+Seat 5: mad69006 (32430 in chips) 
+Seat 6: AnthoMojito (22237 in chips) 
+Delavaij: posts the ante 100
+pipinoelbreve9: posts the ante 100
+ignacio-paul: posts the ante 100
+mad69006: posts the ante 100
+AnthoMojito: posts the ante 100
+*** 3rd STREET ***
+Dealt to Delavaij [8h]
+Dealt to pipinoelbreve9 [9h 9d Th]
+Dealt to ignacio-paul [Ts]
+Dealt to mad69006 [7h]
+Dealt to AnthoMojito [5s]
+AnthoMojito: brings in for 150
+Delavaij: folds 
+pipinoelbreve9: raises 350 to 500
+ignacio-paul: folds 
+mad69006: folds 
+AnthoMojito: folds 
+Uncalled bet (350) returned to pipinoelbreve9
+pipinoelbreve9 collected 800 from pot
+pipinoelbreve9: doesn't show hand 
+*** SUMMARY ***
+Total pot 800 | Rake 0 
+Seat 1: Delavaij folded on the 3rd Street (didn't bet)
+Seat 2: pipinoelbreve9 collected (800)
+Seat 4: ignacio-paul folded on the 3rd Street (didn't bet)
+Seat 5: mad69006 folded on the 3rd Street (didn't bet)
+Seat 6: AnthoMojito folded on the 3rd Street
+
+
+
+PokerStars Hand #257822333699: Tournament #3928296603, €0.90+€0.10 EUR 7 Card Stud Hi/Lo Limit - Level VIII (500/1000) - 2025/09/20 23:22:00 CET [2025/09/20 17:22:00 ET]
+Table '3928296603 4' 6-max
+Seat 1: Delavaij (7836 in chips) is sitting out
+Seat 2: pipinoelbreve9 (4930 in chips) 
+Seat 4: ignacio-paul (23028 in chips) 
+Seat 5: mad69006 (32330 in chips) 
+Seat 6: AnthoMojito (21987 in chips) 
+Delavaij: posts the ante 100
+pipinoelbreve9: posts the ante 100
+ignacio-paul: posts the ante 100
+mad69006: posts the ante 100
+AnthoMojito: posts the ante 100
+*** 3rd STREET ***
+Dealt to Delavaij [3h]
+Dealt to pipinoelbreve9 [6d Ks 6s]
+Dealt to ignacio-paul [Tc]
+Dealt to mad69006 [9h]
+Dealt to AnthoMojito [4d]
+Delavaij: brings in for 150
+pipinoelbreve9: raises 350 to 500
+ignacio-paul: calls 500
+mad69006: folds 
+AnthoMojito: calls 500
+Delavaij: folds 
+*** 4th STREET ***
+Dealt to pipinoelbreve9 [6d Ks 6s] [Td]
+Dealt to ignacio-paul [Tc] [Jd]
+Dealt to AnthoMojito [4d] [As]
+AnthoMojito: bets 500
+pipinoelbreve9: raises 500 to 1000
+ignacio-paul: folds 
+AnthoMojito: calls 500
+*** 5th STREET ***
+Dealt to pipinoelbreve9 [6d Ks 6s Td] [5s]
+Dealt to AnthoMojito [4d As] [Js]
+AnthoMojito: checks 
+pipinoelbreve9: bets 1000
+AnthoMojito: calls 1000
+*** 6th STREET ***
+Dealt to pipinoelbreve9 [6d Ks 6s Td 5s] [Qh]
+Dealt to AnthoMojito [4d As Js] [Th]
+AnthoMojito: checks 
+pipinoelbreve9: bets 1000
+AnthoMojito: calls 1000
+*** RIVER ***
+Dealt to pipinoelbreve9 [6d Ks 6s Td 5s Qh] [9d]
+AnthoMojito: checks 
+pipinoelbreve9: bets 1000
+AnthoMojito: calls 1000
+*** SHOW DOWN ***
+pipinoelbreve9: shows [6d Ks 6s Td 5s Qh 9d] (HI: a pair of Sixes)
+AnthoMojito: shows [7h 5c 4d As Js Th 3c] (HI: high card Ace; LO: 7,5,4,3,A)
+pipinoelbreve9 collected 5075 from pot
+AnthoMojito collected 5075 from pot
+*** SUMMARY ***
+Total pot 10150 | Rake 0 
+Seat 1: Delavaij folded on the 3rd Street
+Seat 2: pipinoelbreve9 showed [6d Ks 6s Td 5s Qh 9d] and won (5075) with HI: a pair of Sixes
+Seat 4: ignacio-paul folded on the 4th Street
+Seat 5: mad69006 folded on the 3rd Street (didn't bet)
+Seat 6: AnthoMojito showed [7h 5c 4d As Js Th 3c] and won (5075) with HI: high card Ace; LO: 7,5,4,3,A
+
+
+
+PokerStars Hand #257822342953: Tournament #3928296603, €0.90+€0.10 EUR 7 Card Stud Hi/Lo Limit - Level VIII (500/1000) - 2025/09/20 23:22:37 CET [2025/09/20 17:22:37 ET]
+Table '3928296603 4' 6-max
+Seat 1: Delavaij (7586 in chips) is sitting out
+Seat 2: pipinoelbreve9 (5405 in chips) 
+Seat 4: ignacio-paul (22428 in chips) 
+Seat 5: mad69006 (32230 in chips) 
+Seat 6: AnthoMojito (22462 in chips) 
+Delavaij: posts the ante 100
+pipinoelbreve9: posts the ante 100
+ignacio-paul: posts the ante 100
+mad69006: posts the ante 100
+AnthoMojito: posts the ante 100
+*** 3rd STREET ***
+Dealt to Delavaij [Ac]
+Dealt to pipinoelbreve9 [3d Jd Jh]
+Dealt to ignacio-paul [8d]
+Dealt to mad69006 [9s]
+Dealt to AnthoMojito [2c]
+AnthoMojito: brings in for 150
+Delavaij: folds 
+pipinoelbreve9: raises 350 to 500
+ignacio-paul: calls 500
+mad69006: folds 
+AnthoMojito: folds 
+*** 4th STREET ***
+Dealt to pipinoelbreve9 [3d Jd Jh] [Qd]
+Dealt to ignacio-paul [8d] [3s]
+pipinoelbreve9: bets 500
+ignacio-paul: calls 500
+*** 5th STREET ***
+Dealt to pipinoelbreve9 [3d Jd Jh Qd] [4h]
+Dealt to ignacio-paul [8d 3s] [Jc]
+pipinoelbreve9: bets 1000
+ignacio-paul: calls 1000
+*** 6th STREET ***
+Dealt to pipinoelbreve9 [3d Jd Jh Qd 4h] [Td]
+Dealt to ignacio-paul [8d 3s Jc] [2s]
+pipinoelbreve9: bets 1000
+ignacio-paul: calls 1000
+*** RIVER ***
+Dealt to pipinoelbreve9 [3d Jd Jh Qd 4h Td] [Ks]
+pipinoelbreve9: bets 1000
+ignacio-paul: calls 1000
+*** SHOW DOWN ***
+pipinoelbreve9: shows [3d Jd Jh Qd 4h Td Ks] (HI: a pair of Jacks)
+ignacio-paul: shows [4s 7d 8d 3s Jc 2s 9c] (HI: high card Jack; LO: 8,7,4,3,2)
+pipinoelbreve9 collected 4325 from pot
+ignacio-paul collected 4325 from pot
+*** SUMMARY ***
+Total pot 8650 | Rake 0 
+Seat 1: Delavaij folded on the 3rd Street (didn't bet)
+Seat 2: pipinoelbreve9 showed [3d Jd Jh Qd 4h Td Ks] and won (4325) with HI: a pair of Jacks
+Seat 4: ignacio-paul showed [4s 7d 8d 3s Jc 2s 9c] and won (4325) with HI: high card Jack; LO: 8,7,4,3,2
+Seat 5: mad69006 folded on the 3rd Street (didn't bet)
+Seat 6: AnthoMojito folded on the 3rd Street
+
+
+
+PokerStars Hand #257822350330: Tournament #3928296603, €0.90+€0.10 EUR 7 Card Stud Hi/Lo Limit - Level VIII (500/1000) - 2025/09/20 23:23:06 CET [2025/09/20 17:23:06 ET]
+Table '3928296603 4' 6-max
+Seat 1: Delavaij (7486 in chips) is sitting out
+Seat 2: pipinoelbreve9 (5630 in chips) 
+Seat 4: ignacio-paul (22653 in chips) 
+Seat 5: mad69006 (32130 in chips) 
+Seat 6: AnthoMojito (22212 in chips) 
+Delavaij: posts the ante 100
+pipinoelbreve9: posts the ante 100
+ignacio-paul: posts the ante 100
+mad69006: posts the ante 100
+AnthoMojito: posts the ante 100
+*** 3rd STREET ***
+Dealt to Delavaij [2h]
+Dealt to pipinoelbreve9 [Ad 8c Tc]
+Dealt to ignacio-paul [4h]
+Dealt to mad69006 [Qs]
+Dealt to AnthoMojito [Jh]
+Delavaij: brings in for 150
+pipinoelbreve9: raises 350 to 500
+ignacio-paul: folds 
+mad69006: folds 
+AnthoMojito: calls 500
+Delavaij: folds 
+*** 4th STREET ***
+Dealt to pipinoelbreve9 [Ad 8c Tc] [5d]
+Dealt to AnthoMojito [Jh] [3h]
+AnthoMojito: checks 
+pipinoelbreve9: bets 500
+AnthoMojito: calls 500
+*** 5th STREET ***
+Dealt to pipinoelbreve9 [Ad 8c Tc 5d] [Ks]
+Dealt to AnthoMojito [Jh 3h] [2s]
+pipinoelbreve9: bets 1000
+AnthoMojito: calls 1000
+*** 6th STREET ***
+Dealt to pipinoelbreve9 [Ad 8c Tc 5d Ks] [9s]
+Dealt to AnthoMojito [Jh 3h 2s] [Qd]
+pipinoelbreve9: bets 1000
+AnthoMojito: calls 1000
+*** RIVER ***
+Dealt to pipinoelbreve9 [Ad 8c Tc 5d Ks 9s] [2c]
+pipinoelbreve9: bets 1000
+AnthoMojito: calls 1000
+*** SHOW DOWN ***
+pipinoelbreve9: shows [Ad 8c Tc 5d Ks 9s 2c] (HI: high card Ace)
+AnthoMojito: shows [5s 5h Jh 3h 2s Qd 7d] (HI: a pair of Fives)
+AnthoMojito collected 8650 from pot
+No low hand qualified
+*** SUMMARY ***
+Total pot 8650 | Rake 0 
+Seat 1: Delavaij folded on the 3rd Street
+Seat 2: pipinoelbreve9 showed [Ad 8c Tc 5d Ks 9s 2c] and lost with HI: high card Ace
+Seat 4: ignacio-paul folded on the 3rd Street (didn't bet)
+Seat 5: mad69006 folded on the 3rd Street (didn't bet)
+Seat 6: AnthoMojito showed [5s 5h Jh 3h 2s Qd 7d] and won (8650) with HI: a pair of Fives
+
+
+
+PokerStars Hand #257822358933: Tournament #3928296603, €0.90+€0.10 EUR 7 Card Stud Hi/Lo Limit - Level VIII (500/1000) - 2025/09/20 23:23:41 CET [2025/09/20 17:23:41 ET]
+Table '3928296603 4' 6-max
+Seat 1: Delavaij (7236 in chips) is sitting out
+Seat 2: pipinoelbreve9 (1530 in chips) 
+Seat 4: ignacio-paul (22553 in chips) 
+Seat 5: mad69006 (32030 in chips) 
+Seat 6: AnthoMojito (26762 in chips) 
+Delavaij: posts the ante 100
+pipinoelbreve9: posts the ante 100
+ignacio-paul: posts the ante 100
+mad69006: posts the ante 100
+AnthoMojito: posts the ante 100
+*** 3rd STREET ***
+Dealt to Delavaij [4c]
+Dealt to pipinoelbreve9 [Th 7h 9c]
+Dealt to ignacio-paul [8s]
+Dealt to mad69006 [9h]
+Dealt to AnthoMojito [Qs]
+Delavaij: brings in for 150
+pipinoelbreve9: raises 350 to 500
+ignacio-paul has timed out
+ignacio-paul: folds 
+ignacio-paul is sitting out
+mad69006: folds 
+ignacio-paul has returned
+AnthoMojito: raises 500 to 1000
+Delavaij: folds 
+pipinoelbreve9: raises 430 to 1430 and is all-in
+AnthoMojito: calls 430
+*** 4th STREET ***
+Dealt to pipinoelbreve9 [Th 7h 9c] [8d]
+Dealt to AnthoMojito [Qs] [3c]
+*** 5th STREET ***
+Dealt to pipinoelbreve9 [Th 7h 9c 8d] [5s]
+Dealt to AnthoMojito [Qs 3c] [9s]
+*** 6th STREET ***
+Dealt to pipinoelbreve9 [Th 7h 9c 8d 5s] [2h]
+Dealt to AnthoMojito [Qs 3c 9s] [3s]
+*** RIVER ***
+Dealt to pipinoelbreve9 [Th 7h 9c 8d 5s 2h] [8h]
+Delavaij has returned
+*** SHOW DOWN ***
+pipinoelbreve9: shows [Th 7h 9c 8d 5s 2h 8h] (HI: a pair of Eights)
+AnthoMojito: shows [2s Qd Qs 3c 9s 3s 3h] (HI: a full house, Threes full of Queens)
+AnthoMojito collected 3510 from pot
+No low hand qualified
+pipinoelbreve9 finished the tournament in 21st place
+*** SUMMARY ***
+Total pot 3510 | Rake 0 
+Seat 1: Delavaij folded on the 3rd Street
+Seat 2: pipinoelbreve9 showed [Th 7h 9c 8d 5s 2h 8h] and lost with HI: a pair of Eights
+Seat 4: ignacio-paul folded on the 3rd Street (didn't bet)
+Seat 5: mad69006 folded on the 3rd Street (didn't bet)
+Seat 6: AnthoMojito showed [2s Qd Qs 3c 9s 3s 3h] and won (3510) with HI: a full house, Threes full of Queens
+
+
+

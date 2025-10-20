@@ -15,13 +15,11 @@ SPANISH_MAP = {
 }
 
 
-class PokerStarsParser(Parser):
-    def __init__(self, file_path: str) -> None:
-        super().__init__(file_path)
+class PokerStarsParser:
+    def __init__(self, file_path: str = "") -> None:
+        self.file_path = file_path
         self.site = "PokerStars"
         self.failed = 0
-        if self.file_extension.lower() != ".txt":
-            raise ValueError("PokerStars parser only supports .txt files")
 
     @staticmethod
     def _get_hands(file_content: str) -> t.List[str]:
@@ -84,8 +82,11 @@ class PokerStarsParser(Parser):
 
     def _parse_round(
         self, round_str: str, section: str, players: t.Iterable[Player]
-    ) -> Round:
-        round = Round(name=section)
+    ) -> t.Optional[Round]:
+        try:
+            round = Round(name=section)
+        except ValueError:
+            return None
         for row in round_str.split("\n"):
             if (
                 re.search(
@@ -302,6 +303,8 @@ class PokerStarsParser(Parser):
         filepath: t.Optional[str] = None,
         file_content: t.Optional[str] = None,
         hero: t.Optional[Player] = None,
+        skip_tournaments: bool = True,
+        progress: bool = True,
     ) -> t.Iterable[Hand]:
         if file_content:
             pass
@@ -312,11 +315,33 @@ class PokerStarsParser(Parser):
                 file_content = file.read()
 
         hands = self._get_hands(file_content)
+        hands = [hand for hand in hands if hand.strip() != ""]
         results: list[Hand] = []
         with Progress() as prog:
-            task = prog.add_task("Parsing...", total=len(hands), color="blue")
+            if progress:
+                task = prog.add_task("Parsing file...", total=len(hands), color="blue")
             for hand in hands:
                 try:
+                    id_pattern = re.compile(r"Hand \#(\d*)\:")
+                    match = id_pattern.search(hand)
+                    if not match:
+                        print("No hand ID found, skipping hand.")
+                        print(f"This error comes from {self.file_path}")
+                        print(hand)
+                        self.failed += 1
+                        continue
+                    hand_id = match.group(1)
+                    
+                    if skip_tournaments:
+                        if re.search(
+                            pattern=r"Tournament",
+                            flags=re.DOTALL | re.IGNORECASE,
+                            string=hand,
+                        ):
+                            if progress:
+                                prog.advance(task_id=task, advance=2)
+                            continue
+                    
                     sections = self._parse_hand(hand)
                     if sections == {}:
                         continue
@@ -329,17 +354,24 @@ class PokerStarsParser(Parser):
                         for k, v in sections.items()
                         if k not in ("table", "date", "pot", "rake")
                     ]
+                    sections = [s for s in sections if s is not None]
                     winner = [s.winner for s in sections if s.winner is not None]
                     if len(winner) > 0:
                         winner: Player = winner[0]
-                    hand_obj = Hand(
-                        players=players,
-                        rounds=sections,
-                        hero=hero,
-                        date=date,
-                        pot=pot,
-                        rake=rake,
-                    )
+                    try:
+                        hand_obj = Hand(
+                            id=hand_id,
+                            raw_text=hand,
+                            players=players,
+                            rounds=sections,
+                            hero=hero,
+                            date=date,
+                            pot=pot,
+                            rake=rake,
+                        )
+                    except ValueError as e:
+                        self.failed += 1
+                        continue
                     # Infer game type at hand level from any round signal
                     try:
                         if any(
@@ -363,10 +395,9 @@ class PokerStarsParser(Parser):
                 except Exception as e:
                     print(e)
                     self.failed += 1
-                    raise e
-                prog.advance(task_id=task, advance=2)
-        if export and filepath is not None:
-            parser = PokerParser(file_path=filepath)
+                    continue
+                if progress:
+                    prog.advance(task_id=task, advance=2)
         if self.failed > 0:
             print("Failed to parse hands:", self.failed)
         return results
@@ -379,7 +410,6 @@ class PokerStarsParser(Parser):
         *args,
         **kwargs,
     ) -> t.Iterable[Hand]:
-        import time
 
         paths = []
         if os.path.exists(directory) is False:
@@ -390,18 +420,11 @@ class PokerStarsParser(Parser):
                     full_path = os.path.join(dirpath, f)
                     paths.append(full_path)  # guardar rutas completas
 
-        data = []
-        items = len(paths)
+        data: t.Iterable[Hand] = []
         with Progress() as prog:
-            task = prog.add_task("Loading...", total=items)
+            task = prog.add_task(f"Parsing Directory...", total=len(paths), color="red")
             for path in paths:
+                hand = self.parse(filepath=path, hero=hero, progress=False, *args, **kwargs)
+                data.extend(hand)
                 prog.advance(task_id=task, advance=1)
-                with open(path, encoding="utf-8") as f:
-                    raw = f.read()
-                    data.append(raw)
-
-        hands = "\n\n".join(data)
-        if export:
-            with open("aggregated_hands.txt", "w+") as f:
-                f.write(hands)
-        return self.parse(file_content=hands, hero=hero, *args, **kwargs)
+        return data

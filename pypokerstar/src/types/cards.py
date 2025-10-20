@@ -42,6 +42,8 @@ class Card:
 
     @staticmethod
     def from_string(string: str) -> "Card":
+        string = string.strip()
+        string = string.replace("[", "").replace("]", "")
         if len(string) != 2:
             raise ValueError("Card string must be of length 2. Given: " + string)
         number_str = string[0]

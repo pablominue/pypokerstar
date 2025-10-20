@@ -136,6 +136,9 @@ class Player:
 
     def __str__(self) -> str:
         return self.name
+    
+    def __hash__(self):
+        return hash(self.name)
 
     def __repr__(self):
         return self.__str__()
@@ -144,6 +147,8 @@ class Player:
 class Hand:
     def __init__(
         self,
+        id: str,
+        raw_text: str,
         players: t.Iterable[Player],
         rounds: t.Iterable[Round],
         hero: t.Optional[Player] = None,
@@ -151,6 +156,8 @@ class Hand:
         pot: t.Optional[float] = 0.0,
         rake: t.Optional[float] = 0.0,
     ) -> None:
+        self.id = id
+        self.raw_text: str
         self.players = players
         self.game_type: t.Literal["cash", "tournament"] = "cash"
         self.pot = pot
@@ -161,6 +168,8 @@ class Hand:
         self.winner: t.Iterable[Player] = []
         self.rounds: t.Iterable[Round] = rounds
         self.rounds = sorted(self.rounds, key=lambda x: ROUNDS[x.name.lower()])
+        self.main_rounds = ["hole cards", "flop", "turn", "river", "show down"]
+        self._result = {}
         self.refresh()
 
     def refresh(self) -> None:
@@ -222,6 +231,35 @@ class Hand:
                     continue
             hero_rounds.append(round)
         return hero_rounds
+    
+    def __get_player_bets(self, player: Player) -> t.Iterable[Bet]:
+        player_bets = []
+        for round in self.rounds:
+            for bet in round.bets:
+                if bet.player == player:
+                    player_bets.append(bet)
+        return player_bets
+    
+    @property
+    def result(self) -> dict[Player, float]:
+        if not self._result:
+            self.refresh()
+            
+            for player in self.players:
+                total_bet = sum(
+                    b.amount for b in self.__get_player_bets(player) if b.type != "collected"
+                )
+                self._result.update({player: -total_bet})
+            
+            summary = self.get_round("summary")
+            if summary:
+                for bet in summary.bets:
+                    if bet.type == "collected":
+                        if bet.player in self._result:
+                            self._result[bet.player] += bet.amount
+                        else:
+                            self._result.update({bet.player: bet.amount})
+        return self._result
 
     def to_polars(self) -> dict[str, t.Any]:
         self.refresh()

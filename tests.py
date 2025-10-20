@@ -2,25 +2,28 @@ import os
 
 import polars as pl
 
-from pypokerstar.src.game.poker import History, Player
+from pypokerstar.src.game.poker import History, Player, Hand
 from pypokerstar.src.metrics.metrics import VPIP
 from pypokerstar.src.parsers.pokerstars import PokerStarsParser
 from pypokerstar.src.tools.playerstats import PlayerStats
 
-parser = PokerStarsParser("tests/pokerdata.txt")
-player = Player(name="pipinoelbreve9")
-hands = parser.parse_dir("/home/pablo/Documents/HM3", hero=player)
 
+player = Player(name="pipinoelbreve9")
+hands = PokerStarsParser("").parse_dir("PokerStars/", hero=player)
 history = History(hands=hands, hero=player)
+
+
+
 df = history.get_money_history()
 
 with pl.Config() as cfg:
     cfg.set_tbl_cols(10)
-    print(df)
-    print(df.get_column("rake").max())
 
 df = df.to_pandas()
+print(
+    df.sort_values(by="net", ascending=True)[["date", "pot", "net", "won", "total_bet"]]
+)
 
 import matplotlib.pyplot as plt
 df.set_index("date")[["net"]].cumsum().plot()
-plt.savefig("out.png")
+plt.savefig("out2.png")
