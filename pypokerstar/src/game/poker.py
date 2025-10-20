@@ -1,13 +1,30 @@
+"""
+Core poker game models and logic.
+
+This module implements the core classes needed to model poker hands, players, rounds,
+bets and game history. It provides functionality for tracking game state, player actions,
+and computing results.
+
+Classes:
+    Bet: Represents a betting action by a player
+    Round: Models a single round/street of poker 
+    Player: Represents a player in the game
+    Hand: Models a complete poker hand from start to finish
+    History: Maintains history of multiple poker hands
+"""
+
 import datetime
 import random
 import typing as t
+import phevaluator
+import copy
 
 import polars as pl
 import uuid
 import os
 
 
-from pypokerstar.src.types import Card, Deck
+from pypokerstar.src.types import Card, Deck, Range
 
 SEATS = {
     1: "button",
@@ -28,8 +45,55 @@ ROUNDS = {
     "summary": 6,
 }
 
+class Player:
+    """
+    Represents a player in the poker game.
+    
+    Attributes:
+        name (str): Player's name/identifier
+        pot (float): Player's stack/chip amount
+        seat (int): Player's seat position at table
+        cards (list[Card]): Player's hole cards
+    """
+    def __init__(
+        self,
+        name: str = "",
+        pot: float = 0,
+        seat: int = 1,
+        cards: t.Iterable[Card] = None,
+    ) -> None:
+        self.name: str = name
+        self.seat: int = seat
+        self.pot: float = pot
+        self.cards: t.Iterable[Card] = cards
+
+    def print_cards(self) -> None:
+        for card in self.cards:
+            print(card)
+
+    def __eq__(self, other: object) -> bool:
+        if not isinstance(other, Player):
+            return NotImplemented
+        return self.name == other.name
+
+    def __str__(self) -> str:
+        return self.name
+    
+    def __hash__(self):
+        return hash(self.name)
+
+    def __repr__(self):
+        return self.__str__()
 
 class Bet:
+    """
+    Represents a betting action made by a player.
+    
+    Attributes:
+        player (Player): The player making the bet
+        amount (float): The bet amount
+        type (str): Type of bet (bets/calls/raises/folds/checks/blinds/uncalled/collected)
+    """
     def __init__(
         self,
         player: "Player",
@@ -58,7 +122,18 @@ class Bet:
 
 
 class Round:
-
+    """
+    Models a single round/street of poker (preflop, flop, turn, river).
+    
+    Attributes:
+        name (str): Name of the round (hole cards/flop/turn/river/show down)
+        players (list[Player]): Players active in the round
+        bets (list[Bet]): Betting actions made during the round
+        pot (float): Total amount in the pot for this round
+        board (list[Card]): Community cards shown in this round
+        winner (list[Player]): Players who won this round
+        game_type (str): Game type - cash or tournament
+    """
     def __init__(
         self,
         name: str,
@@ -99,8 +174,45 @@ class Round:
             if card not in self.board:
                 self.board.append(card)
 
+    def active_players(self) -> t.Iterable[Player]:
+        plys = set()
+        for bet in self.bets:
+            plys.add(bet.player)
+        return list(plys)
+
     def set_winner(self, player: "Player") -> None:
         self.winner.append(player)
+
+    def get_hero_equity(self, hero: Player, iterations: int) -> float:
+        deck = Deck()
+        for card in hero.cards + list(self.board):
+            deck.remove_cards(card)
+        wins = 0
+        for _ in range(iterations):
+            deck.shuffle()
+            sim_deck = copy.deepcopy(deck)
+            sim_board = list(self.board)
+            while len(sim_board) < 5:
+                sim_board.append(sim_deck.draw())
+            hero_hand = hero.cards + sim_board
+            hero_score = phevaluator.evaluate_cards(
+                *[card.standard_string() for card in hero_hand]
+            )
+            is_winner = True
+            for player in self.active_players():
+                if player == hero:
+                    continue
+                opp_cards = [sim_deck.draw() for _ in range(2)]
+                opp_hand = opp_cards + sim_board
+                opp_score = phevaluator.evaluate_cards(
+                    *[card.standard_string() for card in opp_hand]
+                )
+                if opp_score < hero_score:
+                    is_winner = False
+                    break
+            if is_winner:
+                wins += 1
+        return wins / iterations
 
     def __str__(self) -> str:
         return self.name
@@ -112,39 +224,28 @@ class Round:
         return hash((self.name, tuple(self.bets), self.pot, tuple(self.board)))
 
 
-class Player:
-    def __init__(
-        self,
-        name: str = "",
-        pot: float = 0,
-        seat: int = 1,
-        cards: t.Iterable[Card] = None,
-    ) -> None:
-        self.name: str = name
-        self.seat: int = seat
-        self.pot: float = pot
-        self.cards: t.Iterable[Card] = cards
 
-    def print_cards(self) -> None:
-        for card in self.cards:
-            print(card)
-
-    def __eq__(self, other: object) -> bool:
-        if not isinstance(other, Player):
-            return NotImplemented
-        return self.name == other.name
-
-    def __str__(self) -> str:
-        return self.name
-    
-    def __hash__(self):
-        return hash(self.name)
-
-    def __repr__(self):
-        return self.__str__()
 
 
 class Hand:
+    """
+    Models a complete poker hand from start to finish.
+    
+    Tracks all actions, players, rounds and results for a single hand of poker.
+    
+    Attributes:
+        id (str): Unique hand identifier
+        raw_text (str): Original hand history text
+        players (list[Player]): Players involved in the hand
+        game_type (str): Cash game or tournament
+        pot (float): Total pot size
+        rake (float): Rake taken from pot
+        date (datetime): When hand was played
+        hero (Player): The player perspective for this hand
+        board (list[Card]): Community cards
+        winner (list[Player]): Hand winners
+        rounds (list[Round]): All rounds in the hand
+    """
     def __init__(
         self,
         id: str,
@@ -173,6 +274,18 @@ class Hand:
         self.refresh()
 
     def refresh(self) -> None:
+        if self.hero:
+            adhoc = [player for player in self.players if player == self.hero]
+            if len(adhoc) == 1:
+                self.hero = adhoc[0]
+        sd = self.get_round("show down")
+        if sd:
+            for p in sd.players:
+                if p.cards is not None and len(p.cards) == 2:
+                    adhoc = [player for player in self.players if player == p]
+                    if len(adhoc) == 1:
+                        self.players.remove(p)
+                        self.players.append(adhoc[0])
         for round in self.rounds:
             if round.game_type == "tournament":
                 self.game_type = "tournament"
@@ -278,6 +391,8 @@ class Hand:
                 for round in self.rounds
             ],
         }
+    
+
 
     def __str__(self) -> str:
         players = {", ".join([str(p) for p in self.players])}
@@ -285,6 +400,18 @@ class Hand:
 
 
 class History:
+    """
+    Maintains history of multiple poker hands.
+    
+    Provides analysis and statistics across multiple hands.
+    
+    Attributes:
+        hands (list[Hand]): Collection of poker hands
+        hero (Player): Player perspective for analysis
+        
+    Methods:
+        get_money_history: Returns DataFrame with financial results over time
+    """
     def __init__(
         self, hands: t.Iterable[Hand] = [], hero: t.Optional[Player] = None
     ) -> None:
@@ -353,6 +480,12 @@ class History:
             ]
         )
         return df
+    
+    # def get_ranges(self) -> Range:
+    #     for hand in self.hands:
+    #         preflop = hand.get_round("hole cards")
+    #         for bet in preflop.bets:
+
 
     def __str__(self) -> str:
         return f"History with {len(self.hands)} hands."

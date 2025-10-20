@@ -13,8 +13,16 @@ rich = "^14.1.0"
 pandas = "^2.3.2"
 matplotlib = "^3.10.6"
 pyarrow = "^21.0.0"
+maturin = "^1.9.6"
+phevaluator = "^0.5.3.1"
 
 
 [build-system]
-requires = ["poetry-core"]
-build-backend = "poetry.core.masonry.api"
+requires = ["maturin>=1.0,<2.0"]
+build-backend = "maturin"
+
+
+[tool.maturin]
+module-name = "solver_bridge"
+bindings = "pyo3"
+manifest-path = "solver/Cargo.toml"

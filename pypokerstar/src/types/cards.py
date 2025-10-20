@@ -1,3 +1,16 @@
+"""
+Poker card and deck implementations.
+
+This module provides classes for representing playing cards, card pairs and a full deck
+of cards. Includes utilities for card comparisons and standard poker hand notation.
+
+Classes:
+    Card: Single playing card with suit and number
+    Pair: Two-card poker hand combination
+    Deck: Standard 52-card poker deck
+"""
+
+
 import itertools
 import random
 import typing as t
@@ -10,9 +23,24 @@ HEARTS = "♥️"
 DIAMONDS = "♦️"
 
 SUITS = {"s": SPADES, "c": CLUBS, "h": HEARTS, "d": DIAMONDS}
-
+REVERSE_SUITS = {v: k for k, v in SUITS.items()}
 
 class Card:
+    """
+    Represents a single playing card.
+    
+    Attributes:
+        number (int): Card number/rank (1-13, where 1=Ace)
+        suit (str): Card suit symbol (♠️, ♣️, ♥️, ♦️)
+        
+    Methods:
+        from_string: Creates card from standard notation (e.g. "As" for Ace of spades)
+        pocket_pair: Checks if forms pair with another card
+        suited: Checks if same suit as another card
+        connector: Checks if sequential with another card
+        stringify: Returns unicode string representation
+        standard_string: Returns standard notation string
+    """
     def __init__(self, number, suit) -> None:
         if suit not in SUITS.values():
             available = ", ".join(SUITS)
@@ -78,6 +106,23 @@ class Card:
             number = str(self.number)
 
         return number + self.suit
+    
+    def standard_string(self) -> str:
+        number = ""
+        if self.number == 1:
+            number = "A"
+        elif self.number == 10:
+            number = "T"
+        elif self.number == 11:
+            number = "J"
+        elif self.number == 12:
+            number = "Q"
+        elif self.number == 13:
+            number = "K"
+        else:
+            number = str(self.number)
+
+        return number + REVERSE_SUITS[self.suit]
 
     def __str__(self) -> str:
         return self.stringify()
@@ -90,6 +135,17 @@ class Card:
 
 
 class Pair:
+    """
+    Represents a two-card poker hand combination.
+    
+    Attributes:
+        cards (list[Card]): The two cards in sorted order
+        card1 (Card): First/lower card
+        card2 (Card): Second/higher card
+        suited (bool): Whether cards are same suit
+        pocket_pair (bool): Whether cards are same number
+        hand (str): Standard hand notation (e.g. "AKs" for suited Ace-King)
+    """
     def __init__(self, card1: Card, card2: Card) -> None:
         self.cards = sorted([card1, card2], key=lambda x: x.number)
         self.card1 = self.cards[0]
@@ -123,12 +179,31 @@ class Pair:
 
 
 class Deck:
+    """
+    Implementation of standard 52-card poker deck.
+    
+    Attributes:
+        cards (list[Card]): Remaining cards in the deck
+        
+    Methods:
+        draw: Removes and returns top card(s) from deck
+    """
     def __init__(self) -> None:
         self.cards = [
-            [Card(number=n, suit=suit) for n in range(1, 13, 1)] for suit in SUITS
+            [Card(number=n, suit=suit) for n in range(1, 13, 1)] for suit in SUITS.values()
         ]
         self.cards = list(itertools.chain.from_iterable(self.cards))
         random.shuffle(self.cards)
 
     def draw(self, cards: int = 1) -> Card:
         return self.cards.pop(0)
+    
+    def shuffle(self) -> None:
+        random.shuffle(self.cards)
+
+    def remove_cards(self, *cards: t.Iterable[Card]) -> None:
+        self.cards = [c for c in self.cards if c not in cards]
+
+
+class Range:
+    pass

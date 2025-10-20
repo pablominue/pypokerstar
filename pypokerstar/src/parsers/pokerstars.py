@@ -1,3 +1,13 @@
+"""
+PokerStars hand history parser implementation.
+
+Parses PokerStars format hand histories into structured game objects. Handles both
+cash games and tournaments, multiple currencies and languages.
+
+Classes:
+    PokerStarsParser: Main parser implementation for PokerStars format
+"""
+
 import datetime
 import os
 import re
@@ -16,6 +26,24 @@ SPANISH_MAP = {
 
 
 class PokerStarsParser:
+    """
+    Parser for PokerStars format hand histories.
+    
+    Converts raw hand history text into structured Hand objects with full game state.
+    Handles cash games and tournaments in multiple currencies/languages.
+    
+    Attributes:
+        file_path (str): Path to hand history file
+        site (str): Site identifier ("PokerStars")
+        failed (int): Count of failed hand parses
+        
+    Methods:
+        parse: Parse single file into Hand objects
+        parse_dir: Parse directory of hand history files
+        _parse_hand: Internal method to parse single hand text
+        _parse_round: Internal method to parse single round
+        _get_players: Internal method to extract player details
+    """
     def __init__(self, file_path: str = "") -> None:
         self.file_path = file_path
         self.site = "PokerStars"
@@ -108,8 +136,8 @@ class PokerStarsParser:
                         if player.name == player_name:
                             player.cards = cards
             elif re.match(pattern=r"\[.*\]", string=row, flags=re.DOTALL) is not None:
-                pattern = re.compile(r"\[(.*)\] \[(\S{2})\]?$")
-                match = pattern.search(row)
+                pattern_fr = re.compile(r"\[(.*)\] \[(\S{2})\]?$")
+                match = pattern_fr.search(row)
                 if match:
                     previous_cards = match.group(1)
                     round_cards = (
@@ -125,6 +153,17 @@ class PokerStarsParser:
                         else previous_cards
                     )
                     round.update_board(*cards)
+                else:
+                    if round.name=="flop":
+                        pattern = re.compile(r"\[(.*)\]$")
+                        match = pattern.search(row)
+                        if match:
+                            cards_str = match.group(1)
+                            cards = [
+                                Card.from_string(card_str)
+                                for card_str in cards_str.split(" ")
+                            ]
+                            round.update_board(*cards)
             elif (
                 re.match(
                     pattern=r"(.+?)(?:\(.*\) )?\: (bets|calls|raises|folds|checks)( .*)?$",
@@ -275,6 +314,17 @@ class PokerStarsParser:
                                     amount=amount,
                                 )
                             )
+            elif re.search(pattern=r"(.*)(?:\: shows )\[(\S+) (\S+)\]", string=row) is not None:
+                pattern = re.compile(r"(.*)(?:\: shows )\[(\S+) (\S+)\]")
+                match = pattern.search(row)
+                if match:
+                    player_name = match.group(1).strip()
+                    card1 = Card.from_string(match.group(2))
+                    card2 = Card.from_string(match.group(3))
+                    for player in players:
+                        if player.name == player_name:
+                            player.cards = [card1, card2]
+                            round.players.append(player)
 
         return round
 
@@ -327,7 +377,6 @@ class PokerStarsParser:
                     if not match:
                         print("No hand ID found, skipping hand.")
                         print(f"This error comes from {self.file_path}")
-                        print(hand)
                         self.failed += 1
                         continue
                     hand_id = match.group(1)
@@ -398,8 +447,6 @@ class PokerStarsParser:
                     continue
                 if progress:
                     prog.advance(task_id=task, advance=2)
-        if self.failed > 0:
-            print("Failed to parse hands:", self.failed)
         return results
 
     def parse_dir(
@@ -427,4 +474,6 @@ class PokerStarsParser:
                 hand = self.parse(filepath=path, hero=hero, progress=False, *args, **kwargs)
                 data.extend(hand)
                 prog.advance(task_id=task, advance=1)
+        if self.failed > 0:
+            print(f"Failed to parse {self.failed} hands.")
         return data
