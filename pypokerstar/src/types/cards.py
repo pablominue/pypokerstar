@@ -133,6 +133,11 @@ class Card:
     def __eq__(self, other: "Card") -> bool:
         return self.number == other.number and self.suit == other.suit
 
+    def __hash__(self) -> int:
+        """
+        Make Card hashable using its (number, suit) identity so it can be stored in sets/dicts.
+        """
+        return hash((self.number, self.suit))
 
 class Pair:
     """

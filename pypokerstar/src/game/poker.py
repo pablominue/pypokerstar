@@ -228,24 +228,7 @@ class Round:
 
 
 class Hand:
-    """
-    Models a complete poker hand from start to finish.
-    
-    Tracks all actions, players, rounds and results for a single hand of poker.
-    
-    Attributes:
-        id (str): Unique hand identifier
-        raw_text (str): Original hand history text
-        players (list[Player]): Players involved in the hand
-        game_type (str): Cash game or tournament
-        pot (float): Total pot size
-        rake (float): Rake taken from pot
-        date (datetime): When hand was played
-        hero (Player): The player perspective for this hand
-        board (list[Card]): Community cards
-        winner (list[Player]): Hand winners
-        rounds (list[Round]): All rounds in the hand
-    """
+    # ...existing code...
     def __init__(
         self,
         id: str,
@@ -258,58 +241,106 @@ class Hand:
         rake: t.Optional[float] = 0.0,
     ) -> None:
         self.id = id
-        self.raw_text: str
-        self.players = players
+        self.raw_text: str = raw_text
+        self.players = list(players)
+
+        self.players_map: dict[str, Player] = {p.name: p for p in self.players}
         self.game_type: t.Literal["cash", "tournament"] = "cash"
         self.pot = pot
         self.rake = rake
         self.date: t.Optional[datetime.datetime] = date
         self.hero = hero
-        self.board: t.Iterable[Card] = []
-        self.winner: t.Iterable[Player] = []
-        self.rounds: t.Iterable[Round] = rounds
-        self.rounds = sorted(self.rounds, key=lambda x: ROUNDS[x.name.lower()])
-        self.main_rounds = ["hole cards", "flop", "turn", "river", "show down"]
-        self._result = {}
-        self.refresh()
 
+        self.board: list[Card] = []
+        self._board_set: set[Card] = set()
+        self.winner: list[Player] = []
+        self.rounds: list[Round] = list(rounds)
+        self.rounds = sorted(self.rounds, key=lambda x: ROUNDS[x.name.lower()])
+
+        self.rounds_map: dict[str, Round] = {r.name.lower(): r for r in self.rounds}
+        self.main_rounds = ["hole cards", "flop", "turn", "river", "show down"]
+        self._result: dict[Player, float] = {}
+
+        self._player_bets_cache: dict[str, list[Bet]] = {}
+        self.refresh()
     def refresh(self) -> None:
+        # ensure hero references canonical Player object if present
         if self.hero:
-            adhoc = [player for player in self.players if player == self.hero]
-            if len(adhoc) == 1:
-                self.hero = adhoc[0]
+            canonical = self.players_map.get(self.hero.name)
+            if canonical:
+                self.hero = canonical
+
         sd = self.get_round("show down")
         if sd:
+            # for each player object in show down, if it contains card info, map to canonical
             for p in sd.players:
-                if p.cards is not None and len(p.cards) == 2:
-                    adhoc = [player for player in self.players if player == p]
-                    if len(adhoc) == 1:
-                        self.players.remove(p)
-                        self.players.append(adhoc[0])
+                if getattr(p, "cards", None) and len(p.cards) == 2:
+                    canonical = self.players_map.get(p.name)
+                    if canonical and canonical is not p:
+                        # copy cards into canonical object rather than remove/append in list
+                        canonical.cards = p.cards
+
+        # update board and winner lists using sets for fast membership
         for round in self.rounds:
             if round.game_type == "tournament":
                 self.game_type = "tournament"
             for card in round.board:
-                if card not in self.board:
+                if card not in self._board_set:
+                    self._board_set.add(card)
                     self.board.append(card)
             if round.name.lower() == "table":
                 self.table = round.bets
-            if len(round.winner) > 0:
+            if round.winner:
                 for p in round.winner:
-                    if p not in self.winner:
-                        self.winner.append(p)
+                    if p.name not in {w.name for w in self.winner}:
+                        # prefer canonical player object
+                        canonical = self.players_map.get(p.name, p)
+                        self.winner.append(canonical)
 
     def get_round(self, name: str) -> t.Optional[Round]:
-        for round in self.rounds:
-            if round.name.lower() == name.lower():
-                return round
-        return None
+        return self.rounds_map.get(name.lower())
 
     def get_player(self, name: str) -> t.Optional[Player]:
-        for player in self.players:
-            if player.name == name:
-                return player
-        return None
+        return self.players_map.get(name)
+
+    def __get_player_bets(self, player: Player) -> t.Iterable[Bet]:
+        # cache per player by name to avoid re-iterating rounds repeatedly
+        if player.name in self._player_bets_cache:
+            return self._player_bets_cache[player.name]
+        player_bets: list[Bet] = []
+        for round in self.rounds:
+            # iterate bets once
+            for bet in round.bets:
+                if bet.player.name == player.name:
+                    player_bets.append(bet)
+        self._player_bets_cache[player.name] = player_bets
+        return player_bets
+
+    @property
+    def result(self) -> dict[Player, float]:
+        if not self._result:
+            self.refresh()
+            # use names as keys internally then map back to canonical Player objects
+            tmp: dict[str, float] = {}
+            for player in self.players:
+                total_bet = sum(
+                    b.amount for b in self.__get_player_bets(player) if b.type != "collected"
+                )
+                tmp[player.name] = -total_bet
+
+            summary = self.get_round("summary")
+            if summary:
+                for bet in summary.bets:
+                    if bet.type == "collected":
+                        name = bet.player.name
+                        tmp[name] = tmp.get(name, 0.0) + bet.amount
+
+            # convert to dict[Player, float] using players_map
+            for name, val in tmp.items():
+                player_obj = self.players_map.get(name)
+                if player_obj:
+                    self._result[player_obj] = val
+        return self._result
 
     def get_hero_bets(self) -> t.Iterable[Bet]:
         if not self.hero:
@@ -353,26 +384,6 @@ class Hand:
                     player_bets.append(bet)
         return player_bets
     
-    @property
-    def result(self) -> dict[Player, float]:
-        if not self._result:
-            self.refresh()
-            
-            for player in self.players:
-                total_bet = sum(
-                    b.amount for b in self.__get_player_bets(player) if b.type != "collected"
-                )
-                self._result.update({player: -total_bet})
-            
-            summary = self.get_round("summary")
-            if summary:
-                for bet in summary.bets:
-                    if bet.type == "collected":
-                        if bet.player in self._result:
-                            self._result[bet.player] += bet.amount
-                        else:
-                            self._result.update({bet.player: bet.amount})
-        return self._result
 
     def to_polars(self) -> dict[str, t.Any]:
         self.refresh()

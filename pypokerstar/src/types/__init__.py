@@ -1,1 +1,1 @@
-from .cards import Card, Deck, Pair
+from .cards import Card, Deck, Pair, Range
