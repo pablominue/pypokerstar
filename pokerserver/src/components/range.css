@@ -1,0 +1,131 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.range-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    gap: 10px;
+    width: 100%;
+}
+
+.range-square {
+    width: 100px;
+    height: 100px;
+    border: 2px solid #007bff;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f8f9fa;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.range-square:hover {
+    background-color: #e9ecef;
+    transform: scale(1.05);
+}
+
+.range-square.selected {
+    background-color: #007bff;
+    color: white;
+}
+
+.range-grid {
+    display: grid;
+    grid-template-columns: repeat(13, 1fr);
+    gap: 6px;
+    background: #f5f6fa;
+    padding: 24px;
+    border-radius: 18px;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.range-row {
+    display: contents; /* Permite que los Pair se alineen en el grid */
+}
+
+/* Right-docked range menu */
+.range-menu-wrapper {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 280px;
+    transform: translateX(0);
+    transition: transform 0.2s ease-in-out;
+    z-index: 30;
+}
+.range-menu-wrapper.collapsed {
+    transform: translateX(100%);
+}
+.toggle-handle {
+    position: absolute;
+    left: -24px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 24px;
+    height: 84px;
+    border: none;
+    border-radius: 8px 0 0 8px;
+    background: #007bff;
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0.9;
+}
+.toggle-handle:hover {
+    opacity: 1;
+}
+
+.undo-btn, .clear-btn {
+    background: #f5f6fa;
+    color: #007bff;
+    border: 1px solid #007bff;
+    border-radius: 6px;
+    padding: 6px 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s, color 0.2s;
+}
+.undo-btn:hover, .clear-btn:hover {
+    background: #007bff;
+    color: #fff;
+}
+
+/* Legend under the grid */
+.range-legend {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.legend-item {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+.legend-swatch {
+    width: 12px;
+    height: 12px;
+    border-radius: 3px;
+    border: 1px solid #d1d5db;
+}
+
+.range-layout {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+}

@@ -1,0 +1,93 @@
+.range-menu {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    background: #fff;
+    border-left: 1px solid #e6e8eb;
+    box-shadow: -2px 0 12px rgba(0,0,0,0.06);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.range-menu h3 {
+    margin: 0 0 6px 0;
+    font-size: 1.1rem;
+    color: #222;
+}
+
+.range-menu select,
+.range-menu input {
+    width: 100%;
+    padding: 6px 10px;
+    border-radius: 6px;
+    border: 1px solid #e6e8eb;
+    font-size: 1rem;
+    margin-bottom: 8px;
+}
+
+.color-list {
+    display: none;
+}
+
+.color-btn { display: none; }
+
+.percent-row {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.percent-row input[type="range"] {
+    flex: 1;
+}
+
+.preset-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.preset-btn {
+    background: #f3f4f6;
+    color: #111827;
+    border: 1px solid #e5e7eb;
+    border-radius: 999px;
+    padding: 6px 10px;
+    font-size: 0.9rem;
+    cursor: pointer;
+}
+.preset-btn.active, .preset-btn:hover {
+    background: #007bff;
+    color: #fff;
+    border-color: #007bff;
+}
+
+.action-list { display: grid; gap: 8px; }
+.action-row { display: grid; grid-template-columns: 36px 1fr; align-items: center; gap: 8px; }
+.action-row.active .action-name { background: #007bff; color: #fff; border-color: #007bff; }
+.action-color { width: 36px; height: 32px; padding: 0; border: none; background: transparent; }
+.action-color.disabled { width: 36px; height: 32px; background: #e5e7eb; border-radius: 6px; }
+.action-name { text-align: left; background: #f3f4f6; border: 1px solid #e5e7eb; color: #111827; border-radius: 6px; padding: 6px 10px; cursor: pointer; }
+
+.history-row { display: flex; flex-wrap: wrap; gap: 8px; }
+.history-swatch { width: 28px; height: 28px; border-radius: 6px; border: 1px solid #e5e7eb; cursor: pointer; }
+.history-swatch:hover { transform: scale(1.05); }
+
+.legend {
+    margin-top: auto;
+    padding-top: 8px;
+    border-top: 1px solid #e6e8eb;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #374151;
+    font-size: 0.95rem;
+}
+.legend-swatch {
+    width: 14px;
+    height: 14px;
+    border-radius: 4px;
+    border: 1px solid #d1d5db;
+}

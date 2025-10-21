@@ -1,0 +1,36 @@
+.upper-menu {
+    display: block;
+    width: 100%;
+    background: #ffffff;
+    border-bottom: 1px solid #e6e8eb;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+    padding: 10px 20px;
+    display: flex;
+    align-items: left;
+    justify-content: 5px;
+    gap: 16px;
+}
+.upper-menu h2 {
+    margin: 0;
+    font-size: 1.5rem;
+    color: #222;
+}
+.upper-menu .menu-items {
+    display: flex;
+    gap: 16px;
+}
+.menu-button {
+    background: #f5f6fa;
+    color: #007bff;
+    border: 1px solid #007bff;
+    border-radius: 6px;
+    padding: 6px 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s, color 0.2s;
+}
+
+.menu-button:hover {
+    background: #007bff;
+    color: #fff;
+}

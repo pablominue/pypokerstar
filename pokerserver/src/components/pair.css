@@ -1,0 +1,40 @@
+.pair-button {
+    width: 64px;
+    height: 40px;
+    border: none;
+    border-radius: 8px;
+    background: #fff;
+    color: #222;
+    font-size: 1.1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.04);
+    margin: 0;
+    outline: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 1;
+}
+
+.pair-button:hover {
+    box-shadow: 0 2px 6px rgba(0,0,0,0.12);
+}
+
+.pair-segments {
+    position: absolute;
+    inset: 0;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.pair-segment {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    pointer-events: none;
+}
