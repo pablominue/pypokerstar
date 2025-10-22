@@ -30,11 +30,16 @@ export async function loadRange({ player = "default", category = "Ranges", posit
 }
 
 export async function listRanges({ player = "default", category = "Ranges", position } = {}) {
+    try {
     const params = new URLSearchParams({ player, category });
     if (position) params.set("position", position);
     const url = `${API_BASE}/ranges/list?${params.toString()}`;
     const res = await fetch(url, { method: "GET" });
     return handleResponse(res);
+    } catch (error) {
+        console.error("Error listing ranges:", error);
+        return {};
+    }
 }
 
 export async function deleteRange({ player = "default", category = "Ranges", position = "UTG", name }) {
