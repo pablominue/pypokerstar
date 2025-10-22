@@ -36,3 +36,17 @@
     background-color: #2980b9;
 }
 
+.screen-grid {
+    height: 100vh;
+    width: 100vw;
+    align-items: center;
+}   
+
+.screen-content {
+    padding: 20px;
+}
+
+.sepparator {
+    height: 10px;
+    width: 100%;
+}
