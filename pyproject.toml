@@ -15,6 +15,8 @@ matplotlib = "^3.10.6"
 pyarrow = "^21.0.0"
 maturin = "^1.9.6"
 phevaluator = "^0.5.3.1"
+fastapi = "^0.119.1"
+sqlalchemy = "^2.0.44"
 
 
 [build-system]
