@@ -1,5 +1,6 @@
 import React from "react";
 import "./rangeMenu.css";
+import RangeLibraryMenu from "./rangeLibrary";
 
 function RangeMenu({ menuState, setMenuState, colorHistory = [], setColorHistory, colorsByAction, onSetActionColor }) {
     const { action, percent } = menuState;
@@ -104,6 +105,12 @@ function RangeMenu({ menuState, setMenuState, colorHistory = [], setColorHistory
                     </div>
                 </div>
             )}
+            <div>
+                <hr></hr>
+                <RangeLibraryMenu
+                />
+            </div>
+
         </div>
     );
 }

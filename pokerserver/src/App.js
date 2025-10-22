@@ -1,6 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
-import Range from './components/range.jsx';
+import Range from './components/preflop/range.jsx';
 import Screen from './components/screen.jsx';
 import UpperMenu from './components/upperMenu.jsx';
 import Statistics from './components/statistics.jsx';

@@ -8,10 +8,11 @@ import {
   XAxis,
   YAxis,
   withDeviceRatio,
+  CrossHairCursor,
+  Cursor,
   MouseCoordinateX,
   MouseCoordinateY,
-  CrossHairCursor,
-  HoverTooltip, 
+  HoverTooltip,
 } from "react-financial-charts";
 
 /*
@@ -35,7 +36,7 @@ function genMockHands(n = 120) {
   for (let i = 0; i < n; i++) {
     // make some realistic-ish P/L swings
     const won = Math.random() < 0.6 ? Math.round(Math.random() * 6) : 0;
-    const lost = Math.random() < 0.4 ? Math.round(Math.random() * 6) : 0;
+    const lost = Math.random() < 0.6 ? Math.round(Math.random() * 6) : 0;
     hands.push({
       id: 100000 + i,
       earned: won,
@@ -76,10 +77,10 @@ function Statistics({ width = 1000, ratio = window.devicePixelRatio || 1 }) {
   const maxNegative = Math.max(...dataRaw.map((d) => (d.cumulative < 0 ? Math.abs(d.cumulative) : 0)), 0);
 
   // scale opacities so that stronger swings get stronger color
-  const posOpacity = Math.min(0.9, maxPositive / maxAbs * 0.9 + 0.1);
-  const negOpacity = Math.min(0.9, maxNegative / maxAbs * 0.9 + 0.1);
+  const posOpacity = Math.min(0.9, (maxPositive / maxAbs) * 0.9 + 0.1);
+  const negOpacity = Math.min(0.9, (maxNegative / maxAbs) * 0.9 + 0.1);
 
-  // colors
+  // colors (use toFixed(2) to produce valid rgba alpha)
   const green = `rgba(16,185,129,${posOpacity.toFixed(2)})`; // emerald
   const red = `rgba(239,68,68,${negOpacity.toFixed(2)})`; // rose
 
@@ -92,16 +93,17 @@ function Statistics({ width = 1000, ratio = window.devicePixelRatio || 1 }) {
   const xExtents = [start, end];
 
   return (
-    <div>
+    <div style={{ alignContent: "center", display: "flex", flexDirection: "column", marginTop: 16, marginBottom: 32, alignItems: "center" }}>
       <h2 style={{ margin: "8px 0 16px", fontFamily: "Inter, Roboto, Arial", color: "#0f172a" }}>
-        Profit / Loss over time
+        Profit & Loss over time
       </h2>
 
       <div style={{
-        background: "#0b1220",
+        background: " #f5f6fa",
         borderRadius: 12,
         padding: 12,
         color: "white",
+        border: "1px solid #e2e8f0",
       }}>
 
         <ChartCanvas
@@ -116,18 +118,16 @@ function Statistics({ width = 1000, ratio = window.devicePixelRatio || 1 }) {
           xScale={xScale}
           xExtents={xExtents}
         >
-          <Chart id={1} yExtents={(d) => [d.cumulative]}>
-            {/* axis styling: make ticks/labels visible against dark background */}
+          <Chart id={1} yExtents={(d) => [d.cumulative, 0]}>
             <XAxis
               showGridLines
               stroke="#0f172a"
               tickStroke="#94a3b8"
-              tickLabelFill="#94a3b8"
+              tickLabelFill="#283f5fff"
               showTicks={true}
               opacity={0.9}
               tickFormat={(d) => {
                 try {
-                  // show only day number for tight spacing; change as needed
                   return d instanceof Date ? d.getDate() : d.toString();
                 } catch {
                   return String(d);
@@ -138,51 +138,21 @@ function Statistics({ width = 1000, ratio = window.devicePixelRatio || 1 }) {
               showGridLines
               stroke="#0f172a"
               tickStroke="#94a3b8"
-              tickLabelFill="#94a3b8"
+              tickLabelFill="#283f5fff"
               showTicks={true}
               opacity={0.9}
             />
-             {/* positive area */}
-             <AreaSeries
-               yAccessor={(d) => (d.cumulative > 0 ? d.cumulative : 0)}
-               stroke={() => green}
-               fillStyle={() => green}
-             />
-             {/* negative area */}
-             <AreaSeries
-               yAccessor={(d) => (d.cumulative < 0 ? d.cumulative : 0)}
-               stroke={() => red}
-               fillStyle={() => red}
-             />
-             {/* cumulative line */}
-            <LineSeries yAccessor={(d) => d.cumulative} fillStyle="#60a5fa" strokeWidth={2} />
 
-            <MouseCoordinateX displayFormat={(d) => {
-              try { return d instanceof Date ? d.toLocaleString() : String(d); }
-              catch { return String(d); }
-            }} />
-            <MouseCoordinateY displayFormat={(y) => `${Number(y).toFixed(2)}€`} />
+            <LineSeries yAccessor={(d) => 0} strokeStyle = "#000000ff" strokeWidth={1} />
+            <LineSeries yAccessor={(d) => d.cumulative} strokeStyle = "#888888ff" strokeWidth={2} />
+            <Cursor />
 
-          <HoverTooltip
-            origin={[10, -40]}
-            tooltipContent={({ currentItem, xAccessor }) => {
-              if (!currentItem) return null;
-              return {
-                x: xAccessor(currentItem) instanceof Date ? xAccessor(currentItem).toLocaleString() : String(xAccessor(currentItem)),
-                y: `${Number(currentItem.cumulative).toFixed(2)}€`,
-                items: [
-                  { label: "Cumulative", value: `${Number(currentItem.cumulative).toFixed(2)}€`, stroke: "#60a5fa" },
-                  { label: "Net", value: `${Number(currentItem.net).toFixed(2)}€` },
-                ],
-              };
-            }}
-          />
-             <CrossHairCursor />
-           </Chart>
-         </ChartCanvas>
-       </div>
-     </div>
-   );
- }
- 
- export default Statistics;
+          </Chart>
+        <CrossHairCursor />
+        </ChartCanvas>
+      </div>
+    </div>
+  );
+}
+
+export default Statistics;

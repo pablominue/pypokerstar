@@ -500,6 +500,7 @@ class History:
                 for hand in self.hands
                 if hand.hero == hero and hand.game_type == "cash"
             ]
+        self.main_stats: t.Optional[pl.DataFrame] = None
 
     def add_hand(self, hand: Hand) -> None:
         self.hands.append(hand)
@@ -560,7 +561,9 @@ class History:
     
 
     @cache
-    def get_main_stats(self, hero: t.Optional[Player]) -> pl.DataFrame:
+    def get_main_stats(self, hero: t.Optional[Player], force: bool = False) -> pl.DataFrame:
+        if self.main_stats is not None and not force:
+            return self.main_stats
         with Progress() as progress:
             task = progress.add_task("[cyan]Processing hands...", total=len(self.hands))
             hands = self.hands if not hero else [hand for hand in self.hands if hand.hero == hero]
@@ -673,6 +676,7 @@ class History:
                         "w$sd": collected > 0.0 and showdown_cards is not None,
                     })
                 progress.update(task, advance=1)
+                self.main_stats = pl.DataFrame(per_hand_rows)
         return pl.DataFrame(per_hand_rows)
 
 
