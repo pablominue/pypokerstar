@@ -1,31 +1,53 @@
-version: '3.3'
+version: "3.8"
+
 services:
   db:
     image: mysql:5.7
-    restart: always
+    restart: unless-stopped
     environment:
-      MYSQL_DATABASE: 'database'
-      MYSQL_USER: 'user'
-      MYSQL_PASSWORD: 'password'
-      MYSQL_ROOT_PASSWORD: 'password'
+      MYSQL_DATABASE: "database"
+      MYSQL_USER: "user"
+      MYSQL_PASSWORD: "password"
+      MYSQL_ROOT_PASSWORD: "password"
     ports:
-      - '3306:3306'
-    expose:
-      - '3306'
+      - "3306:3306"
     volumes:
-      - my-db:/var/lib/mysql
+      - db-data:/var/lib/mysql
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "localhost"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
   backend:
-    build: ./backend
-    restart: always
-    ports:
-      - '8000:8000'
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    restart: on-failure
     depends_on:
-      - db
+      db:
+        condition: service_healthy
+    environment:
+      DATABASE_URL: "mysql+pymysql://user:password@db:3306/database"
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./backend:/app
+    command: ["uvicorn", "backend.main:app", "--host", "0.0.0.0", "--port", "8000"]
 
-
-environment:
-  DATABASE_URL: mysql+pymysql://user:password@db:3306/database
-
+  frontend:
+    build:
+      context: ./pokerserver
+      dockerfile: Dockerfile
+    restart: on-failure
+    ports:
+      - "3000:3000"
+    environment:
+      REACT_APP_API_BASE: "http://backend:8000"
+    volumes:
+      - ./pokerserver:/app 
+    depends_on:
+      - backend
 
 volumes:
-  my-db:
+  db-data:
