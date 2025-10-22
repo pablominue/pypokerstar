@@ -1,5 +1,7 @@
 var r = document.querySelector(':root');
 
+export const API_BASE = "http://localhost:8000/api"; // change to your backend address
+
 function myFunction_get() {
   // Get the styles (properties and values) for the root
   var rs = getComputedStyle(r);
