@@ -11,14 +11,10 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     build-essential gcc libpq-dev curl git ca-certificates \
     && rm -rf /var/lib/apt/lists/*
 
-RUN curl -sSL https://install.python-poetry.org | python3 - && \
-    poetry --version
+RUN pip install poetry
+COPY . /app/
 
-COPY pyproject.toml poetry.lock* /app/
-
-RUN poetry install --no-interaction --no-ansi --no-dev
-
-COPY . /app
+RUN poetry install --no-interaction --no-ansi
 
 EXPOSE 8000
 
