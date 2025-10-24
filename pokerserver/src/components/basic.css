@@ -1,0 +1,23 @@
+.MuiBox-root {
+  position: 'absolute';
+  top: '50%';
+  left: '50%';
+  transform: 'translate(-50%, -50%)';
+  width: 400;
+  border: '2px solid #000';
+}
+
+.basic-btn {
+    background: #f5f6fa;
+    color: #007bff;
+    border: 1px solid #007bff;
+    border-radius: 6px;
+    padding: 6px 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s, color 0.2s;
+}
+.basic-btn:hover {
+    background: #007bff;
+    color: #fff;
+}

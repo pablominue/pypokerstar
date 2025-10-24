@@ -129,3 +129,177 @@ body {
     align-items: center;
     gap: 16px;
 }
+
+.popup {
+    background-color: #d1d5db;
+    opacity: 90%;
+    position: fixed;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 15px;
+    border: #5f5f5f;
+    width: 30lh;
+    height:40vh;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    background: rgba(248, 250, 252, 0.96);
+    backdrop-filter: saturate(140%) blur(6px);
+    -webkit-backdrop-filter: saturate(140%) blur(6px);
+    border: 1px solid #e5e7eb;
+    box-shadow: 0 24px 64px rgba(2, 6, 23, 0.24);
+    padding: 18px 22px;
+}
+
+
+
+
+/* Section headers inside modal */
+.popup h2 {
+  margin: 4px 0 10px;
+  font-size: 28px;
+  letter-spacing: 0.2px;
+  color: #0f172a;
+}
+.popup h3 {
+  margin: 16px 0 8px;
+  font-size: 16px;
+  color: #111827;
+}
+
+/* Field rows */
+.popup .field-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* React-Dropdown modern theme */
+.rd-root { width: 100%; }
+
+.rd-control {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  background: #ffffff;
+  border: 1.5px solid #cfd8e3;
+  border-radius: 12px;
+  padding: 12px 14px;
+  min-height: 46px;
+  color: #0f172a;
+  box-shadow: 0 2px 10px rgba(15, 23, 42, 0.04);
+  transition: border-color .18s ease, box-shadow .18s ease, background .18s ease;
+}
+.rd-control:hover {
+  border-color: #9bbdff;
+  box-shadow: 0 8px 22px rgba(15, 23, 42, 0.08);
+}
+.rd-control.is-open {
+  border-color: #007bff;
+  box-shadow: 0 10px 28px rgba(0, 123, 255, 0.18);
+}
+.rd-control:focus-within {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.18);
+}
+
+.rd-placeholder { color: #6b7280; }
+
+/* Arrow */
+.rd-arrow {
+  margin-left: auto;
+  width: 0; height: 0;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-top: 7px solid #6b7280;
+  transition: transform .18s ease, border-top-color .18s ease;
+}
+.is-open .rd-arrow {
+  transform: rotate(180deg);
+  border-top-color: #007bff;
+}
+
+/* Menu panel */
+.rd-menu {
+  margin-top: 8px;
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 6px;
+  box-shadow: 0 18px 40px rgba(15, 23, 42, 0.14);
+  max-height: 280px;
+  overflow-y: auto;
+}
+
+/* Options */
+.Dropdown-option {
+  padding: 10px 12px;
+  border-radius: 8px;
+  color: #0f172a;
+  cursor: pointer;
+  transition: background .12s ease, color .12s ease;
+}
+.Dropdown-option:hover {
+  background: #f3f4f6;
+}
+.Dropdown-option.is-selected {
+  background: #e7f0ff;
+  color: #0b5ed7;
+  font-weight: 600;
+}
+
+/* Plus buttons next to dropdowns */
+.popup .icon-btn {
+  background: #f5f6fa;
+  color: #0f172a;
+  border: 1px solid #cfd8e3;
+  border-radius: 10px;
+  width: 38px; height: 38px;
+  display: inline-flex; align-items: center; justify-content: center;
+  font-size: 18px;
+  transition: background .18s ease, border-color .18s ease, box-shadow .18s ease;
+}
+.popup .icon-btn:hover {
+  background: #eef2ff;
+  border-color: #9bbdff;
+  box-shadow: 0 6px 16px rgba(15, 23, 42, 0.08);
+}
+
+/* Primary action bar */
+.popup .range-button {
+  background: #007bff;
+  color: #fff;
+  border: 1px solid #007bff;
+  border-radius: 12px;
+  padding: 12px 16px;
+  font-weight: 700;
+  letter-spacing: .2px;
+  transition: transform .06s ease, box-shadow .18s ease, background .18s ease;
+}
+.popup .range-button:hover {
+  box-shadow: 0 10px 24px rgba(0, 123, 255, 0.22);
+}
+.popup .range-button:active {
+  transform: translateY(1px);
+}
+
+/* Small-screen refinements */
+@media (max-width: 520px) {
+  .popup { padding: 14px 14px; }
+  .rd-control { min-height: 44px; }
+}
+
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  align-items: center;   /* vertical center */
+  justify-content: center; /* horizontal center */
+  background: rgba(15, 23, 42, 0.28); /* dim backdrop */
+  z-index: 1000;
+}

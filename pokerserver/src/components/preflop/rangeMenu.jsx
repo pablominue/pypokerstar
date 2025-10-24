@@ -106,9 +106,6 @@ function RangeMenu({ menuState, setMenuState, colorHistory = [], setColorHistory
                 </div>
             )}
             <div>
-                <hr></hr>
-                <RangeLibraryMenu
-                />
             </div>
 
         </div>
